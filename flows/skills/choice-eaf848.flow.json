@@ -1,0 +1,122 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "r1zzpxtm1b",
+    "contentId": "builtin_single-choice-A2BUUs",
+    "invalidContentId": "builtin_text-WfmZPd",
+    "keywords": {
+      "Place to Visit": [
+        "Place to Visit",
+        "sites",
+        "tourist places",
+        "tourist sites"
+      ],
+      "Hotel Accomodation": [
+        "Hotel Accomodation",
+        "2. Hotel/Accomodation",
+        "hotel",
+        "rest"
+      ],
+      "Food restuarant": [
+        "Food restuarant",
+        "4. Food/Restuarant ",
+        "food",
+        "restaurant"
+      ],
+      "Helpline": [
+        "Helpline",
+        "5. Helpline",
+        "help",
+        "assistance"
+      ],
+      "live agent": [
+        "live agent",
+        "6.Talk to a live agent",
+        "person",
+        "talk to a person"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 5,
+      "repeatChoicesOnInvalid": true,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-A2BUUs {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "023649"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"r1zzpxtm1b\",\"contentId\":\"builtin_single-choice-A2BUUs\",\"invalidContentId\":\"builtin_text-WfmZPd\",\"keywords\":{\"Place to Visit\":[\"Place to Visit\",\"sites\",\"tourist places\",\"tourist sites\"],\"Hotel Accomodation\":[\"Hotel Accomodation\",\"2. Hotel/Accomodation\",\"hotel\",\"rest\"],\"Food restuarant\":[\"Food restuarant\",\"4. Food/Restuarant \",\"food\",\"restaurant\"],\"Helpline\":[\"Helpline\",\"5. Helpline\",\"help\",\"assistance\"],\"live agent\":[\"live agent\",\"6.Talk to a live agent\",\"person\",\"talk to a person\"]},\"config\":{\"nbMaxRetries\":5,\"repeatChoicesOnInvalid\":true,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-r1zzpxtm1b'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "855298"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"r1zzpxtm1b\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-r1zzpxtm1b']) > Number(5)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "048931"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_text-WfmZPd {}",
+        "say #!builtin_single-choice-A2BUUs {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "891864"
+    }
+  ]
+}

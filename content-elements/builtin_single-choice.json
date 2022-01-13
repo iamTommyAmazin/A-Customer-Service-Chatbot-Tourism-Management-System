@@ -1,0 +1,457 @@
+[
+  {
+    "id": "builtin_single-choice-A2BUUs",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Place to Visit",
+          "value": "Place to Visit"
+        },
+        {
+          "title": " Hotel/Accomodation",
+          "value": "Hotel Accomodation"
+        },
+        {
+          "title": "Food/Restuarant ",
+          "value": "Food restuarant"
+        },
+        {
+          "title": "Helpline",
+          "value": "Helpline"
+        },
+        {
+          "title": "Talk to a live agent",
+          "value": "live agent"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Okay, I can help you with the following"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T08:29:44.190Z",
+    "modifiedOn": "2022-01-06T11:16:48.842Z"
+  },
+  {
+    "id": "builtin_single-choice-KVL1CD",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Mombasa",
+          "value": "Mombasa"
+        },
+        {
+          "title": "Nairobi",
+          "value": "Nairobi"
+        },
+        {
+          "title": "Kisumu",
+          "value": "Kisumu"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "In which city?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T08:45:25.656Z",
+    "modifiedOn": "2022-01-13T12:58:15.655Z"
+  },
+  {
+    "id": "builtin_single-choice-uodQs1",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Care to share your feedback? I have some fun facts for you 😃"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T10:52:28.668Z",
+    "modifiedOn": "2021-10-26T07:00:38.740Z"
+  },
+  {
+    "id": "builtin_single-choice-aG6784",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Would you like to make an enquiry about the place?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T08:56:13.715Z",
+    "modifiedOn": "2022-01-07T10:55:58.132Z"
+  },
+  {
+    "id": "builtin_single-choice-r4Dl8P",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Confirm the details you have given are correct"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T13:36:22.734Z",
+    "modifiedOn": "2021-10-26T14:24:42.672Z"
+  },
+  {
+    "id": "builtin_single-choice-gnl9CL",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Police",
+          "value": "Police"
+        },
+        {
+          "title": "Ambulance",
+          "value": "Ambulance"
+        },
+        {
+          "title": "Fire Station",
+          "value": "Fire Station"
+        },
+        {
+          "title": "Suicide",
+          "value": "Suicide"
+        },
+        {
+          "title": "Depression",
+          "value": "Depression"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Sorry 😢 What kind of help do you need?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T08:50:21.466Z",
+    "modifiedOn": "2021-11-26T08:50:21.466Z"
+  },
+  {
+    "id": "builtin_single-choice-_2v6QH",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Hi! {{user.Name}}! I would like to know more about you.\n\n\nCould you answer some questions about your travel styles?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T10:54:48.243Z",
+    "modifiedOn": "2022-01-10T10:47:08.132Z"
+  },
+  {
+    "id": "builtin_single-choice-jko7ng",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Have you ever been to Mombasa?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T11:45:17.460Z",
+    "modifiedOn": "2022-01-06T11:45:17.460Z"
+  },
+  {
+    "id": "builtin_single-choice-tla2Wj",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Local Culture",
+          "value": "Local Culture"
+        },
+        {
+          "title": "Museum Arts",
+          "value": "Museum Arts"
+        },
+        {
+          "title": "Historical Buildings",
+          "value": "Historical Buildings"
+        },
+        {
+          "title": "National Park Visit",
+          "value": "National Park Visit"
+        },
+        {
+          "title": "Sporting Event",
+          "value": "Sporting Event"
+        },
+        {
+          "title": "Hiking ",
+          "value": "Hiking"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Okay...what are you interested in?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T11:52:04.681Z",
+    "modifiedOn": "2022-01-07T12:36:27.535Z"
+  },
+  {
+    "id": "builtin_single-choice-daEVYN",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Have you ever been in Nairobi"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T11:56:19.531Z",
+    "modifiedOn": "2022-01-06T11:56:19.531Z"
+  },
+  {
+    "id": "builtin_single-choice-dg7HcQ",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "Yes"
+        },
+        {
+          "title": "No",
+          "value": "No"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Have you ever been in Kisumu"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T11:57:29.672Z",
+    "modifiedOn": "2022-01-06T11:57:29.672Z"
+  },
+  {
+    "id": "builtin_single-choice-YYuQW5",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "BACK",
+          "value": "BACK"
+        },
+        {
+          "title": "NEXT",
+          "value": "NEXT"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Select BACK to go back to previous choices and NEXT to proceed."
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T14:20:46.610Z",
+    "modifiedOn": "2022-01-07T08:30:44.728Z"
+  },
+  {
+    "id": "builtin_single-choice-rUVSNb",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Below 20,000",
+          "value": "below 20,000"
+        },
+        {
+          "title": "20,000 - 50,000",
+          "value": "20,000-  50,000"
+        },
+        {
+          "title": "50,000 and above",
+          "value": "50,000 and above"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Okay... what is your budget range? (in Kenyan shilling)"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T14:58:39.499Z",
+    "modifiedOn": "2022-01-06T15:13:08.865Z"
+  },
+  {
+    "id": "builtin_single-choice-BY-VUn",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Junior suites",
+          "value": "Junior suites"
+        },
+        {
+          "title": "Executives suites",
+          "value": "Executives suites"
+        },
+        {
+          "title": "Presidential Suites",
+          "value": "Presidential Suites"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "What category of room would you like?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T08:48:45.671Z",
+    "modifiedOn": "2022-01-07T08:48:45.671Z"
+  },
+  {
+    "id": "builtin_single-choice-rH2wEE",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Swahili Dishes",
+          "value": "Swahii Dishes"
+        },
+        {
+          "title": "African Dishes",
+          "value": "African Dishes"
+        },
+        {
+          "title": "Italian Dishes",
+          "value": "Italian Dishes"
+        },
+        {
+          "title": "Chinese Dishes",
+          "value": "Chinese Dishe"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "What is your favourite type of food?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T09:17:36.518Z",
+    "modifiedOn": "2022-01-07T09:17:56.919Z"
+  },
+  {
+    "id": "builtin_single-choice-HuAWib",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Less than 20,000",
+          "value": "Less than 20,000"
+        },
+        {
+          "title": "Greater than 20,000",
+          "value": "Greater than 20,000"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "What is your food budget? (In Kenyan Shillings)"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T09:26:55.769Z",
+    "modifiedOn": "2022-01-07T09:27:19.657Z"
+  },
+  {
+    "id": "builtin_single-choice-cScL10",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Male",
+          "value": "Male"
+        },
+        {
+          "title": "Female",
+          "value": "Female"
+        },
+        {
+          "title": "Other",
+          "value": "Other"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Your gender is...?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-10T10:50:57.765Z",
+    "modifiedOn": "2022-01-10T10:50:57.765Z"
+  }
+]

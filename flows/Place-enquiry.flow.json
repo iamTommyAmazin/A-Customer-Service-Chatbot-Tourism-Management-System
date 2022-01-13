@@ -1,0 +1,765 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "cad600fdd4",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-places-copy"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "7db2f234a7",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-places-copy",
+      "flow": "skills/choice-6e2250.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Mombasa]",
+          "condition": "temp['skill-choice-ret-d03v0mqqs2'] == \"Mombasa\"",
+          "node": "city_choice_save-copy"
+        },
+        {
+          "caption": "User picked [Nairobi]",
+          "condition": "temp['skill-choice-ret-d03v0mqqs2'] == \"Nairobi\"",
+          "node": "city_choice_save-copy-1"
+        },
+        {
+          "caption": "User picked [Kisumu]",
+          "condition": "temp['skill-choice-ret-d03v0mqqs2'] == \"Kisumu\"",
+          "node": "city_choice_save-copy-2"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "0b5d12d270",
+      "name": "Mombasa_sites-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-Enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-XzebZR",
+        "say #!builtin_text-LbCJEb",
+        "builtin/wait {\"delay\":\"5000\"}",
+        "say #!builtin_card-l2P7ee",
+        "say #!builtin_carousel-fR0ne2"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "9e1c0501dc",
+      "name": "Nairobi_sites-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-Enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-cAGOtq",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f83e0846af",
+      "name": "Kisumu_sites-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-Enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-4-kDTv",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-4b39a2",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "Been_Mombasa",
+      "flow": "skills/choice-4b39a2.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-c4j8fp9wth'] == \"Yes\"",
+          "node": "choice-InterestedActivity_Mombasa"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-c4j8fp9wth'] == \"No\"",
+          "node": "choice-InterestedActivity_Mombasa"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-19a649",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-InterestedActivity_Mombasa",
+      "flow": "skills/choice-19a649.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Local C...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Local Culture\"",
+          "node": "MSA_Local_culture"
+        },
+        {
+          "caption": "User picked [Museum ...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Museum Arts\"",
+          "node": "MSA_Meuseum"
+        },
+        {
+          "caption": "User picked [Histori...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Historical Buildings\"",
+          "node": "MSA_historic_building"
+        },
+        {
+          "caption": "User picked [Nationa...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"National Park Visit\"",
+          "node": "MSA_National_park"
+        },
+        {
+          "caption": "User picked [Sportin...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Sporting Event\"",
+          "node": "MSA_sport_event"
+        },
+        {
+          "caption": "User picked [Hiking]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Hiking\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-3d479c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Been_Nairobi",
+      "flow": "skills/choice-3d479c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-ryxxmmi9ij'] == \"Yes\"",
+          "node": "choice-InterestedActivity-Nairobi"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-ryxxmmi9ij'] == \"No\"",
+          "node": "choice-InterestedActivity-Nairobi"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-261ca1",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Been_Kisumu",
+      "flow": "skills/choice-261ca1.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-olalzfmh6s'] == \"Yes\"",
+          "node": "choice-InterestedActivity-Kisumu"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-olalzfmh6s'] == \"No\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "6478ab1cc5",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-InterestedActivity-Nairobi",
+      "flow": "skills/choice-19a649.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Local C...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Local Culture\"",
+          "node": "NRB_Local_culture"
+        },
+        {
+          "caption": "User picked [Museum ...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Museum Arts\"",
+          "node": "NRB_Museum"
+        },
+        {
+          "caption": "User picked [Histori...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Historical Buildings\"",
+          "node": "NRB_Historic_builiding"
+        },
+        {
+          "caption": "User picked [Nationa...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"National Park Visit\"",
+          "node": "NRB_national_park"
+        },
+        {
+          "caption": "User picked [Sportin...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Sporting Event\"",
+          "node": "NRB_sporting_events"
+        },
+        {
+          "caption": "User picked [Hiking]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Hiking\"",
+          "node": "NRB_Hiking"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "##"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "366b73f2df",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-InterestedActivity-Kisumu",
+      "flow": "skills/choice-19a649.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Local C...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Local Culture\"",
+          "node": "KIS_local_culture"
+        },
+        {
+          "caption": "User picked [Museum ...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Museum Arts\"",
+          "node": "KIS_Museum"
+        },
+        {
+          "caption": "User picked [Histori...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Historical Buildings\"",
+          "node": "KIS_Historic_building"
+        },
+        {
+          "caption": "User picked [Nationa...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"National Park Visit\"",
+          "node": "KIS_National_park"
+        },
+        {
+          "caption": "User picked [Sportin...]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Sporting Event\"",
+          "node": "KIS_sporting_activity"
+        },
+        {
+          "caption": "User picked [Hiking]",
+          "condition": "temp['skill-choice-ret-4f451xwqo1'] == \"Hiking\"",
+          "node": "KIS_Hiking"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "##"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "11bddb626f",
+      "name": "MSA_historic_building",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-jCPd03",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "559505c0d2",
+      "name": "MSA_National_park",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-cPFPmF",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f523b52d8a",
+      "name": "MSA_sport_event",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-zVM6-J",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "15bee840c1",
+      "name": "MSA_Beautiful_Island",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-MpWdDi",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "b5b4a646fd",
+      "name": "MSA_Local_culture",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-8Us-ES",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a5811e9ba3",
+      "name": "MSA_Meuseum",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "builtin/wait {\"delay\":\"5000\"}",
+        "say #!builtin_card-Qg7gIH"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "bd1ea61c64",
+      "name": "MSA_Beautiful_beaches",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "builtin/wait {\"delay\":\"5000\"}",
+        "say #!builtin_card-f2X595"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e30bccb4f0",
+      "name": "NRB_Local_culture",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-Sew1KQ",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a759abf87e",
+      "name": "NRB_Museum",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-PECtiS",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "ecc6b703c4",
+      "name": "NRB_Historic_builiding",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-Ueo417",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "9bc9a7a84b",
+      "name": "NRB_national_park",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card--OBDOO",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "7ca8814174",
+      "name": "NRB_sporting_events",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-3iUe-U",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0f9335003c",
+      "name": "NRB_Hiking",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-Kpvwvb",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "53d1b7846b",
+      "name": "KIS_Museum",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-q6sAyj",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "b4084eaf89",
+      "name": "KIS_Hiking",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-LetbFz",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "90ac7a6b62",
+      "name": "KIS_National_park",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-Y71pqZ",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e60e651962",
+      "name": "KIS_local_culture",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-k1XBtz",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "6f3e1a319d",
+      "name": "KIS_Historic_building",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-B0qd8p",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-f080e0",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "MSA-Ask_to_proceed",
+      "flow": "skills/choice-f080e0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [BACK]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"BACK\"",
+          "node": "choice-InterestedActivity_Mombasa"
+        },
+        {
+          "caption": "User picked [NEXT]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"NEXT\"",
+          "node": "main.flow.json#choice-Enquiry"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "670bf5aef2",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "KIS-Ask_to_proceed",
+      "flow": "skills/choice-f080e0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [BACK]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"BACK\"",
+          "node": "choice-InterestedActivity-Kisumu"
+        },
+        {
+          "caption": "User picked [NEXT]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"NEXT\"",
+          "node": "main.flow.json#choice-Enquiry"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "4afb9e503a",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "NRB-Ask_to_proceed",
+      "flow": "skills/choice-f080e0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [BACK]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"BACK\"",
+          "node": "choice-InterestedActivity-Nairobi"
+        },
+        {
+          "caption": "User picked [NEXT]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"NEXT\"",
+          "node": "main.flow.json#choice-Enquiry"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "##"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "3346c09475",
+      "name": "KIS_sporting_activity",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-QzCIWu",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0bedfddf48",
+      "name": "city_choice_save-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Been_Mombasa"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"city\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "b73d524338",
+      "name": "city_choice_save-copy-1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-Been_Nairobi"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"city\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e0e2fa7eef",
+      "name": "city_choice_save-copy-2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-Been_Kisumu"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"city\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

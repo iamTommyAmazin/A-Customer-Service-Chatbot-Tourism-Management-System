@@ -1,0 +1,64 @@
+[
+  {
+    "id": "builtin_image-Tj8S9Z",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/yx229po4bfenlvl4l21h-Bobby%20plays.PNG",
+      "title$en": "Bobby Tours"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-23T19:45:25.573Z",
+    "modifiedOn": "2021-10-23T19:45:25.573Z"
+  },
+  {
+    "id": "builtin_image-twbrwd",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/vjk73ddb904z2zk8pnoq-net%20speed.PNG"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-23T20:08:47.945Z",
+    "modifiedOn": "2021-10-23T20:08:47.945Z"
+  },
+  {
+    "id": "builtin_image-AgGuvC",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/grmzhnmoh542zq54ckok-chatbot%20image.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T07:37:23.717Z",
+    "modifiedOn": "2021-10-24T07:37:23.717Z"
+  },
+  {
+    "id": "builtin_image-wj31nt",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/b9q0bh0k4g395jmqofhr-Chatbot%20avatar.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-28T10:37:45.018Z",
+    "modifiedOn": "2021-11-28T10:37:45.018Z"
+  },
+  {
+    "id": "builtin_image-FSS-85",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/svcz9ycmdaz7unepy2s5-clipart3448992.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-28T10:42:54.098Z",
+    "modifiedOn": "2021-11-28T10:42:54.098Z"
+  },
+  {
+    "id": "builtin_image-E57th2",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/851c8q2y8d8xfng4bmmi-Chatbot%20avatar.png",
+      "title$en": "Solace Tour Chatbot Image"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-10T10:30:54.034Z",
+    "modifiedOn": "2022-01-10T10:30:54.034Z"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "f5stzqmzwg",
+    "contentId": "builtin_single-choice-cScL10",
+    "invalidContentId": "builtin_text-WfmZPd",
+    "keywords": {
+      "Male": [
+        "Male"
+      ],
+      "Female": [
+        "Female"
+      ],
+      "Other": [
+        "Other"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": true,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-cScL10 {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "936171"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"f5stzqmzwg\",\"contentId\":\"builtin_single-choice-cScL10\",\"invalidContentId\":\"builtin_text-WfmZPd\",\"keywords\":{\"Male\":[\"Male\"],\"Female\":[\"Female\"],\"Other\":[\"Other\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":true,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-f5stzqmzwg'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "082393"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"f5stzqmzwg\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-f5stzqmzwg']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "321796"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_text-WfmZPd {}",
+        "say #!builtin_single-choice-cScL10 {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "952795"
+    }
+  ]
+}

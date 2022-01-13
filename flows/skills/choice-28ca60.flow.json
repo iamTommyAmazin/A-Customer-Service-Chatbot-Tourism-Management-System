@@ -1,0 +1,101 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "knzog88wad",
+    "contentId": "builtin_single-choice-BY-VUn",
+    "invalidContentId": "builtin_text-WfmZPd",
+    "keywords": {
+      "Junior suites": [
+        "Junior suites"
+      ],
+      "Executives suites": [
+        "Executives suites"
+      ],
+      "Presidential Suites": [
+        "Presidential Suites"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 5,
+      "repeatChoicesOnInvalid": true,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-BY-VUn {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "957358"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"knzog88wad\",\"contentId\":\"builtin_single-choice-BY-VUn\",\"invalidContentId\":\"builtin_text-WfmZPd\",\"keywords\":{\"Junior suites\":[\"Junior suites\"],\"Executives suites\":[\"Executives suites\"],\"Presidential Suites\":[\"Presidential Suites\"]},\"config\":{\"nbMaxRetries\":5,\"repeatChoicesOnInvalid\":true,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-knzog88wad'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "502509"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"knzog88wad\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-knzog88wad']) > Number(5)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "826927"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_text-WfmZPd {}",
+        "say #!builtin_single-choice-BY-VUn {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "681864"
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry_to_enquiry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "3e72aba82d",
+      "name": "ACC_Phone_request",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ACC_Email-rquest"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-8Booz8",
+        "say #!builtin_text-DZHeAd"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"phone\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "a179fc17f4",
+      "name": "ACC_NationalID_no_request",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ACC_Date_of_travel"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-1tuxBA"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"IDno\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "8715f3e3b8",
+      "name": "ACC_Date_of_travel",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ACC_number_of_people"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-JK5qi8"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"dateoftravel\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "9c503bc16b",
+      "name": "Acc_Confirm_enquiry_info_given",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ACC_confirm_details_correct"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Qi54Nk"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "ba635418bc",
+      "name": "ACC_number_of_people",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Acc_Confirm_enquiry_info_given"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-7DnA28"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"noOfpeople\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "fa29893379",
+      "name": "ACC_Email-rquest",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ACC_NationalID_no_request"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ecEFdq"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"email\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "1cb094a60b",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "ACC_confirm_details_correct",
+      "flow": "skills/choice-87b61c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-9uog1hswcm'] == \"Yes\"",
+          "node": "ACC_SendEmail-Enquiry-Confirmation"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-9uog1hswcm'] == \"No\"",
+          "node": "main.flow.json#choice-Enquiry"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "390a7725b4",
+      "name": "ACC_thank_enquiry_received",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-St_QBA"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e0c23be47a",
+      "name": "entry_to_enquiry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-Acccomodation_Enquiry"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "3ca6d14343",
+      "name": "AccomodationToVisit",
+      "onEnter": [
+        "say #!builtin_text-5zWDc8"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"hotel\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "Choice_category_of_room"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "be4f7993de",
+      "type": "skill-call",
+      "skill": "SendEmail",
+      "name": "ACC_SendEmail-Enquiry-Confirmation",
+      "flow": "skills/SendEmail-2d82df.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.success",
+          "node": "ACC_thank_enquiry_received"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.success",
+          "node": "ACC_Failed-emailEnquiry"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "fe2bfc187f",
+      "name": "ACC_Failed-emailEnquiry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "entry_to_enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-w64mgq"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-28ca60",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "Choice_category_of_room",
+      "flow": "skills/choice-28ca60.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Junior ...]",
+          "condition": "temp['skill-choice-ret-knzog88wad'] == \"Junior suites\"",
+          "node": "hotel_junior"
+        },
+        {
+          "caption": "User picked [Executi...]",
+          "condition": "temp['skill-choice-ret-knzog88wad'] == \"Executives suites\"",
+          "node": "hotel_executive"
+        },
+        {
+          "caption": "User picked [Preside...]",
+          "condition": "temp['skill-choice-ret-knzog88wad'] == \"Presidential Suites\"",
+          "node": "hotel_presedential"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "c90da2dae4",
+      "name": "hotel_junior",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ACC_Phone_request"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"hotelcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "26c8f992b3",
+      "name": "hotel_executive",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ACC_Phone_request"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"hotelcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "06f1120637",
+      "name": "hotel_presedential",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ACC_Phone_request"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"hotelcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "139ea2480d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Acccomodation_Enquiry",
+      "flow": "skills/choice-c86cc1.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-6jo4wwmw0j'] == \"Yes\"",
+          "node": "AccomodationToVisit"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-6jo4wwmw0j'] == \"No\"",
+          "node": "main.flow.json#choice-feedback"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

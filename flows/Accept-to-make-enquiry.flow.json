@@ -1,0 +1,216 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry_to_enquiry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "3f0a82a573",
+      "name": "Phone_request-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Email-rquest-copy"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-8Booz8",
+        "say #!builtin_text-DZHeAd"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"phone\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "6220ece169",
+      "name": "NationalID_no_request-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Date_of_travel-copy"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-1tuxBA"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"IDno\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "14a9166c65",
+      "name": "Date_of_travel-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "number_of_people-copy"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-JK5qi8"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"dateoftravel\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "99cac1a11f",
+      "name": "Confirm_enquiry_info_given-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "confirm_details_correct"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-S_R1Y2"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "7e2037216b",
+      "name": "number_of_people-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Confirm_enquiry_info_given-copy"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-7DnA28"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"noOfpeople\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "eb5723f909",
+      "name": "Email-rquest-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NationalID_no_request-copy"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ecEFdq"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"email\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-87b61c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "confirm_details_correct",
+      "flow": "skills/choice-87b61c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-9uog1hswcm'] == \"Yes\"",
+          "node": "SendEmail-Enquiry-Confirmation"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-9uog1hswcm'] == \"No\"",
+          "node": "main.flow.json#choice-Enquiry"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "da623a27f4",
+      "name": "thank_enquiry_received",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-St_QBA"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "18aa680daa",
+      "name": "entry_to_enquiry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "placeToVisit-copy"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "9536a1ab04",
+      "name": "placeToVisit-copy",
+      "onEnter": [
+        "say #!builtin_text-5zWDc8"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"place\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "Phone_request-copy"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "c260237f55",
+      "type": "skill-call",
+      "skill": "SendEmail",
+      "name": "SendEmail-Enquiry-Confirmation",
+      "flow": "skills/SendEmail-2d82df.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.success",
+          "node": "thank_enquiry_received"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.success",
+          "node": "Failed-emailEnquiry"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "9626d11360",
+      "name": "Failed-emailEnquiry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "entry_to_enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-w64mgq"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "fromAddress": "solacetours254@gmail.com",
+    "toAddress": "agentAmosfromSolace@gmail.com",
+    "subjectElement": "builtin_text-00VlXW",
+    "contentElement": "builtin_text-uLE6rQ"
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "basic-skills/send_email {\"fromAddress\":\"solacetours254@gmail.com\",\"toAddress\":\"agentAmosfromSolace@gmail.com\",\"subjectElement\":\"builtin_text-00VlXW\",\"contentElement\":\"builtin_text-uLE6rQ\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "013403"
+    }
+  ]
+}

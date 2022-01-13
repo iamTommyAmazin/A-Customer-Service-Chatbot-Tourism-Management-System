@@ -1,0 +1,106 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "zs3qnsrf7n",
+    "contentId": "builtin_single-choice-rH2wEE",
+    "invalidContentId": "builtin_text-WfmZPd",
+    "keywords": {
+      "Swahii Dishes": [
+        "Swahii Dishes",
+        "Swahili Dishes"
+      ],
+      "African Dishes": [
+        "African Dishes"
+      ],
+      "Italian Dishes": [
+        "Italian Dishes"
+      ],
+      "Chinese Dishe": [
+        "Chinese Dishe",
+        "Chinese Dishes"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 4,
+      "repeatChoicesOnInvalid": true,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-rH2wEE {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "052297"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"zs3qnsrf7n\",\"contentId\":\"builtin_single-choice-rH2wEE\",\"invalidContentId\":\"builtin_text-WfmZPd\",\"keywords\":{\"Swahii Dishes\":[\"Swahii Dishes\",\"Swahili Dishes\"],\"African Dishes\":[\"African Dishes\"],\"Italian Dishes\":[\"Italian Dishes\"],\"Chinese Dishe\":[\"Chinese Dishe\",\"Chinese Dishes\"]},\"config\":{\"nbMaxRetries\":4,\"repeatChoicesOnInvalid\":true,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-zs3qnsrf7n'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "950155"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"zs3qnsrf7n\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-zs3qnsrf7n']) > Number(4)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "175897"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_text-WfmZPd {}",
+        "say #!builtin_single-choice-rH2wEE {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "479388"
+    }
+  ]
+}

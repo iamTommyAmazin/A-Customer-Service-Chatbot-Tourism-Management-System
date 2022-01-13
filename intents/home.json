@@ -1,0 +1,21 @@
+{
+  "name": "home",
+  "utterances": {
+    "en": [
+      "Home",
+      "home",
+      "Menu",
+      "menu",
+      "Start",
+      "start menu",
+      "first page",
+      "home menu",
+      "Back home",
+      "Intro page"
+    ]
+  },
+  "slots": [],
+  "contexts": [
+    "global"
+  ]
+}

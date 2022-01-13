@@ -1,0 +1,331 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "3652ff5b3c",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "helpline-choice"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-65e632",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "helpline-choice",
+      "flow": "skills/choice-65e632.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Police]",
+          "condition": "temp['skill-choice-ret-p15fz220bl'] == \"Police\"",
+          "node": "help-city-choice-police"
+        },
+        {
+          "caption": "User picked [Ambulan...]",
+          "condition": "temp['skill-choice-ret-p15fz220bl'] == \"Ambulance\"",
+          "node": "help-city-choice-Ambulance"
+        },
+        {
+          "caption": "User picked [Fire St...]",
+          "condition": "temp['skill-choice-ret-p15fz220bl'] == \"Fire Station\"",
+          "node": "help-city-choice-firestation"
+        },
+        {
+          "caption": "User picked [Suicide]",
+          "condition": "temp['skill-choice-ret-p15fz220bl'] == \"Suicide\"",
+          "node": "Suicide-node"
+        },
+        {
+          "caption": "User picked [Depress...]",
+          "condition": "temp['skill-choice-ret-p15fz220bl'] == \"Depression\"",
+          "node": "Depression-node"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "d129addb3d",
+      "name": "Mombasa-police",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-U5QAHf",
+        "say #!builtin_text-0Dz3s7"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-636d3f",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "help-city-choice-police",
+      "flow": "skills/choice-636d3f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Mombasa]",
+          "condition": "temp['skill-choice-ret-l6gxgevew8'] == \"Mombasa\"",
+          "node": "Mombasa-police"
+        },
+        {
+          "caption": "User picked [Nairobi]",
+          "condition": "temp['skill-choice-ret-l6gxgevew8'] == \"Nairobi\"",
+          "node": "Nairobi-police"
+        },
+        {
+          "caption": "User picked [Kisumu]",
+          "condition": "temp['skill-choice-ret-l6gxgevew8'] == \"Kisumu\"",
+          "node": "Kisumu-police"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "ae179b5649",
+      "name": "Nairobi-police",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-W3BtVk",
+        "say #!builtin_text-vy-LBV"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "53aed40ee7",
+      "name": "Kisumu-police",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-KVWl2v",
+        "say #!builtin_text-Dj0K9m"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "25d9f65f66",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "help-city-choice-Ambulance",
+      "flow": "skills/choice-636d3f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Mombasa]",
+          "condition": "temp['skill-choice-ret-l6gxgevew8'] == \"Mombasa\"",
+          "node": "Mombasa-Ambulance"
+        },
+        {
+          "caption": "User picked [Nairobi]",
+          "condition": "temp['skill-choice-ret-l6gxgevew8'] == \"Nairobi\"",
+          "node": "Nairobi-Ambulance"
+        },
+        {
+          "caption": "User picked [Kisumu]",
+          "condition": "temp['skill-choice-ret-l6gxgevew8'] == \"Kisumu\"",
+          "node": "Kisumu-Ambulance"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "87b7625c43",
+      "name": "Suicide-node",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-vGaLSP",
+        "say #!builtin_text-Qxec0d"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e11e934094",
+      "name": "Depression-node",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-vGaLSP",
+        "say #!builtin_text-Qxec0d"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "5f29ae2619",
+      "name": "Mombasa-Ambulance",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ezGak3",
+        "say #!builtin_text-r90Ghu"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "34d7cf28fe",
+      "name": "Kisumu-Ambulance",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-uA1bZl",
+        "say #!builtin_text-HIrjw6"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "19a3daee27",
+      "name": "Nairobi-Ambulance",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-oRf1n2",
+        "say #!builtin_text-j-zCzP"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0026f89ec5",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "help-city-choice-firestation",
+      "flow": "skills/choice-636d3f.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Mombasa]",
+          "condition": "temp['skill-choice-ret-l6gxgevew8'] == \"Mombasa\"",
+          "node": "Mombasa-firestation"
+        },
+        {
+          "caption": "User picked [Nairobi]",
+          "condition": "temp['skill-choice-ret-l6gxgevew8'] == \"Nairobi\"",
+          "node": "Nairobi-Firestation"
+        },
+        {
+          "caption": "User picked [Kisumu]",
+          "condition": "temp['skill-choice-ret-l6gxgevew8'] == \"Kisumu\"",
+          "node": "Kisumu-firestation"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "669cca8599",
+      "name": "Mombasa-firestation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-DcBb1K",
+        "say #!builtin_text--Ja5bD"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "dcbc0780bd",
+      "name": "Nairobi-Firestation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-MYSsn-",
+        "say #!builtin_text-asrWYG"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4556895879",
+      "name": "Kisumu-firestation",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-feedback"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-qOgTf1",
+        "say #!builtin_text-_GANvK"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

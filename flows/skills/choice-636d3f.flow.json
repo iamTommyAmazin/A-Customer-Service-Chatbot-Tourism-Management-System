@@ -1,0 +1,111 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "l6gxgevew8",
+    "contentId": "builtin_single-choice-KVL1CD",
+    "invalidContentId": "builtin_text-WfmZPd",
+    "keywords": {
+      "Mombasa": [
+        "Mombasa",
+        "coast",
+        "South coast",
+        "beach",
+        "MSA"
+      ],
+      "Nairobi": [
+        "Nairobi",
+        "NRB",
+        "Capital City",
+        "Kanairo"
+      ],
+      "Kisumu": [
+        "Kisumu",
+        "lake city",
+        "KSM",
+        "KUM"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 5,
+      "repeatChoicesOnInvalid": true,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-KVL1CD {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "217017"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"l6gxgevew8\",\"contentId\":\"builtin_single-choice-KVL1CD\",\"invalidContentId\":\"builtin_text-WfmZPd\",\"keywords\":{\"Mombasa\":[\"Mombasa\",\"coast\",\"South coast\",\"beach\",\"MSA\"],\"Nairobi\":[\"Nairobi\",\"NRB\",\"Capital City\",\"Kanairo\"],\"Kisumu\":[\"Kisumu\",\"lake city\",\"KSM\",\"KUM\"]},\"config\":{\"nbMaxRetries\":5,\"repeatChoicesOnInvalid\":true,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-l6gxgevew8'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "580501"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"l6gxgevew8\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-l6gxgevew8']) > Number(5)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "436647"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_text-WfmZPd {}",
+        "say #!builtin_single-choice-KVL1CD {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "865535"
+    }
+  ]
+}

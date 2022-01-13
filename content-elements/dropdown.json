@@ -1,0 +1,46 @@
+[
+  {
+    "id": "dropdown-ZQGx3N",
+    "formData": {
+      "buttonText$en": "",
+      "placeholderText$en": "Select a choice",
+      "displayInKeyboard$en": true,
+      "markdown$en": true,
+      "typing$en": true,
+      "message$en": "Hi {{user.Name}}😊, I can help you with the following:\n",
+      "options$en": [
+        {
+          "label": "1. Tourist Places to visit",
+          "value": "1"
+        },
+        {
+          "label": "2. Hotels/Accomodation",
+          "value": "2"
+        },
+        {
+          "label": "3. Food/Resturant",
+          "value": "3"
+        },
+        {
+          "label": "4. Helpline",
+          "value": "4."
+        },
+        {
+          "label": "5. Booking",
+          "value": "5"
+        },
+        {
+          "label": "6. Payment Issue",
+          "value": "6"
+        },
+        {
+          "label": "7. Talk to a Live agent",
+          "value": "7"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T07:55:17.029Z",
+    "modifiedOn": "2021-10-24T08:15:30.775Z"
+  }
+]

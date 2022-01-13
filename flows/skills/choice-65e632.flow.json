@@ -1,0 +1,107 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "p15fz220bl",
+    "contentId": "builtin_single-choice-gnl9CL",
+    "invalidContentId": "builtin_text-WfmZPd",
+    "keywords": {
+      "Police": [
+        "Police"
+      ],
+      "Ambulance": [
+        "Ambulance"
+      ],
+      "Fire Station": [
+        "Fire Station"
+      ],
+      "Suicide": [
+        "Suicide"
+      ],
+      "Depression": [
+        "Depression"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 5,
+      "repeatChoicesOnInvalid": true,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-gnl9CL {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "240345"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"p15fz220bl\",\"contentId\":\"builtin_single-choice-gnl9CL\",\"invalidContentId\":\"builtin_text-WfmZPd\",\"keywords\":{\"Police\":[\"Police\"],\"Ambulance\":[\"Ambulance\"],\"Fire Station\":[\"Fire Station\"],\"Suicide\":[\"Suicide\"],\"Depression\":[\"Depression\"]},\"config\":{\"nbMaxRetries\":5,\"repeatChoicesOnInvalid\":true,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-p15fz220bl'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "024436"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"p15fz220bl\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-p15fz220bl']) > Number(5)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "964242"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_text-WfmZPd {}",
+        "say #!builtin_single-choice-gnl9CL {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "467241"
+    }
+  ]
+}

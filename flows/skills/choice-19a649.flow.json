@@ -1,0 +1,111 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "4f451xwqo1",
+    "contentId": "builtin_single-choice-tla2Wj",
+    "invalidContentId": "builtin_text-WfmZPd",
+    "keywords": {
+      "Local Culture": [
+        "Local Culture"
+      ],
+      "Museum Arts": [
+        "Museum Arts"
+      ],
+      "Historical Buildings": [
+        "Historical Buildings"
+      ],
+      "National Park Visit": [
+        "National Park Visit"
+      ],
+      "Sporting Event": [
+        "Sporting Event"
+      ],
+      "Hiking": [
+        "Hiking",
+        "Hiking "
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 5,
+      "repeatChoicesOnInvalid": true,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-tla2Wj {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "844308"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"4f451xwqo1\",\"contentId\":\"builtin_single-choice-tla2Wj\",\"invalidContentId\":\"builtin_text-WfmZPd\",\"keywords\":{\"Local Culture\":[\"Local Culture\"],\"Museum Arts\":[\"Museum Arts\"],\"Historical Buildings\":[\"Historical Buildings\"],\"National Park Visit\":[\"National Park Visit\"],\"Sporting Event\":[\"Sporting Event\"],\"Hiking\":[\"Hiking\",\"Hiking \"]},\"config\":{\"nbMaxRetries\":5,\"repeatChoicesOnInvalid\":true,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-4f451xwqo1'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "059593"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"4f451xwqo1\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-4f451xwqo1']) > Number(5)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "725927"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_text-WfmZPd {}",
+        "say #!builtin_single-choice-tla2Wj {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "204442"
+    }
+  ]
+}

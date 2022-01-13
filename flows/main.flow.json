@@ -1,0 +1,238 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "Welcome_page",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "Welcome_page",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-learnAbout_Customer"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Xb59Ua",
+        "say #!builtin_image-E57th2",
+        "say #!builtin_text-G8Vbgl"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Name\",\"value\":\"{{event.payload.text}}\"}"
+      ]
+    },
+    {
+      "id": "skill-eaf848",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-functions",
+      "flow": "skills/choice-eaf848.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Place t...]",
+          "condition": "temp['skill-choice-ret-r1zzpxtm1b'] == \"Place to Visit\"",
+          "node": "Place-enquiry.flow.json"
+        },
+        {
+          "caption": "User picked [Hotel A...]",
+          "condition": "temp['skill-choice-ret-r1zzpxtm1b'] == \"Hotel Accomodation\"",
+          "node": "Accommodation-enquiry.flow.json"
+        },
+        {
+          "caption": "User picked [Food re...]",
+          "condition": "temp['skill-choice-ret-r1zzpxtm1b'] == \"Food restuarant\"",
+          "node": "Restaurant-enquiry.flow.json"
+        },
+        {
+          "caption": "User picked [Helpline]",
+          "condition": "temp['skill-choice-ret-r1zzpxtm1b'] == \"Helpline\"",
+          "node": "Helpline-connect.flow.json"
+        },
+        {
+          "caption": "User picked [live ag...]",
+          "condition": "temp['skill-choice-ret-r1zzpxtm1b'] == \"live agent\"",
+          "node": "Live-gent-connect.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "#choice-functions"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "e52ca6a6a8",
+      "name": "Feedback_node",
+      "next": [
+        {
+          "condition": "true",
+          "node": "SendEmail-FeebackMail"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-3JSIQE",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"feedbackScore\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": [
+        "say #!builtin_text-Vp_qSG",
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"feedbackImprove\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-fae87d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-feedback",
+      "flow": "skills/choice-fae87d.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-922slpezi6'] == \"Yes\"",
+          "node": "Feedback_node"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-922slpezi6'] == \"No\"",
+          "node": "Goodbye_no"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "b8791f4f14",
+      "name": "Goodbye_yes",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-functions"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": [
+        "say #!builtin_text-eJHOmt",
+        "builtin/wait {\"delay\":\"2000\"}",
+        "say #!builtin_text-kq-Mbs",
+        "builtin/wait {\"delay\":\"2000\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "3186670c95",
+      "name": "Goodbye_no",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-functions"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-fnKVPh",
+        "builtin/wait {\"delay\":\"2000\"}",
+        "say #!builtin_text-kq-Mbs",
+        "builtin/wait {\"delay\":\"2000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-c86cc1",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-Enquiry",
+      "flow": "skills/choice-c86cc1.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-6jo4wwmw0j'] == \"Yes\"",
+          "node": "Accept-to-make-enquiry.flow.json#entry_to_enquiry"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-6jo4wwmw0j'] == \"No\"",
+          "node": "choice-feedback"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-37f7f0",
+      "type": "skill-call",
+      "skill": "SendEmail",
+      "name": "SendEmail-FeebackMail",
+      "flow": "skills/SendEmail-37f7f0.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.success",
+          "node": "Goodbye_yes"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.success",
+          "node": "Feedback-Not_captured"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "c8bb3a08b6",
+      "name": "Feedback-Not_captured",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Feedback_node"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-e2NPt4"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-93d9da",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-learnAbout_Customer",
+      "flow": "skills/choice-93d9da.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Yes]",
+          "condition": "temp['skill-choice-ret-tnwdjwz18w'] == \"Yes\"",
+          "node": "User-background.flow.json"
+        },
+        {
+          "caption": "User picked [No]",
+          "condition": "temp['skill-choice-ret-tnwdjwz18w'] == \"No\"",
+          "node": "choice-functions"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

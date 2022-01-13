@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "fromAddress": "solacetours254@gmail.com",
+    "toAddress": "{{user.email}}",
+    "subjectElement": "builtin_text-E5KVNI",
+    "contentElement": "builtin_text-gnX5N9"
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "basic-skills/send_email {\"fromAddress\":\"solacetours254@gmail.com\",\"toAddress\":\"{{user.email}}\",\"subjectElement\":\"builtin_text-E5KVNI\",\"contentElement\":\"builtin_text-gnX5N9\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "588134"
+    }
+  ]
+}

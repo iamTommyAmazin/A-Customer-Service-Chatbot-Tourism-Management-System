@@ -1,0 +1,827 @@
+[
+  {
+    "id": "builtin_text-_IpYko",
+    "formData": {
+      "text$en": "I did not understand that. Try again!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-23T09:36:04.621Z",
+    "modifiedOn": "2022-01-05T13:59:20.603Z"
+  },
+  {
+    "id": "builtin_text-H5nFzW",
+    "formData": {
+      "text$en": "Hi welcome",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": [
+        "Hi Good to see you"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-23T19:42:14.198Z",
+    "modifiedOn": "2021-10-23T19:42:48.922Z"
+  },
+  {
+    "id": "builtin_text-SLSPn6",
+    "formData": {
+      "text$en": "I'm Solace Tourism Chatbot",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-23T19:43:25.943Z",
+    "modifiedOn": "2021-10-23T19:43:25.943Z"
+  },
+  {
+    "id": "builtin_text-bf3dXa",
+    "formData": {
+      "text$en": "Hi welcome HHow can I help you",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-23T19:44:29.146Z",
+    "modifiedOn": "2021-10-23T19:44:29.146Z"
+  },
+  {
+    "id": "builtin_text-rA0IiZ",
+    "formData": {
+      "text$en": "Hi, I'm Solace TourChatbot",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T07:35:07.840Z",
+    "modifiedOn": "2021-10-24T07:35:07.840Z"
+  },
+  {
+    "id": "builtin_text-Xb59Ua",
+    "formData": {
+      "text$en": "Hi, My name is Solace Tour Chatbot",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T07:35:48.146Z",
+    "modifiedOn": "2022-01-10T10:34:47.076Z"
+  },
+  {
+    "id": "builtin_text-G8Vbgl",
+    "formData": {
+      "text$en": "I will provide you with tour customer services... what's your name?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T07:38:02.791Z",
+    "modifiedOn": "2022-01-10T10:42:40.094Z"
+  },
+  {
+    "id": "builtin_text-8tXWRQ",
+    "formData": {
+      "text$en": "",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T10:08:49.694Z",
+    "modifiedOn": "2021-10-24T10:50:33.447Z"
+  },
+  {
+    "id": "builtin_text-fnKVPh",
+    "formData": {
+      "text$en": "Thank you for your time {{user.Name}} 😊 have a nice day. \n\n\n",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T10:45:52.452Z",
+    "modifiedOn": "2021-10-26T08:29:50.956Z"
+  },
+  {
+    "id": "builtin_text-3JSIQE",
+    "formData": {
+      "text$en": "How likely are you to recommend me to your friends and family? (10-very likely 😊 , 0-not likely 😡). ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-24T10:58:02.199Z",
+    "modifiedOn": "2021-10-26T07:04:03.285Z"
+  },
+  {
+    "id": "builtin_text-Vp_qSG",
+    "formData": {
+      "text$en": "How can I make your experience better?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T07:05:16.951Z",
+    "modifiedOn": "2021-10-26T07:05:16.951Z"
+  },
+  {
+    "id": "builtin_text-eJHOmt",
+    "formData": {
+      "text$en": "Thank you for your time {{user.Name}} Have a great day. 😊 \n\nYour brain uses around 20 percent of the total oxygen and blood in your body. Did you know that? Now you do. Have a great one! \n\n",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T08:30:44.334Z",
+    "modifiedOn": "2022-01-10T14:49:22.582Z"
+  },
+  {
+    "id": "builtin_text-kq-Mbs",
+    "formData": {
+      "text$en": "You have gone back to main menu!!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T08:34:08.438Z",
+    "modifiedOn": "2021-10-26T08:34:08.438Z"
+  },
+  {
+    "id": "builtin_text-Mo5C-l",
+    "formData": {
+      "text$en": "Would you like to make an enquiry about your interested place to visit?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T08:49:48.225Z",
+    "modifiedOn": "2021-10-26T08:49:48.225Z"
+  },
+  {
+    "id": "builtin_text-8Booz8",
+    "formData": {
+      "text$en": "Great choice!! ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T09:25:51.762Z",
+    "modifiedOn": "2021-10-26T14:37:07.447Z"
+  },
+  {
+    "id": "builtin_text-ecEFdq",
+    "formData": {
+      "text$en": "What is your email address?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T09:48:22.772Z",
+    "modifiedOn": "2021-10-26T09:48:22.772Z"
+  },
+  {
+    "id": "builtin_text-rlPYbm",
+    "formData": {
+      "text$en": "Confirm the City? ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T10:00:29.542Z",
+    "modifiedOn": "2021-10-26T10:12:42.680Z"
+  },
+  {
+    "id": "builtin_text-UPTwSl",
+    "formData": {
+      "text$en": "Confirm the City?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T10:00:29.665Z",
+    "modifiedOn": "2021-10-26T10:00:29.665Z"
+  },
+  {
+    "id": "builtin_text-5zWDc8",
+    "formData": {
+      "text$en": "Confirm the name of the place you have chosen?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T10:34:17.383Z",
+    "modifiedOn": "2022-01-07T10:56:43.789Z"
+  },
+  {
+    "id": "builtin_text-1tuxBA",
+    "formData": {
+      "text$en": "What's your National ID no.?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T11:48:35.586Z",
+    "modifiedOn": "2021-10-26T11:48:35.586Z"
+  },
+  {
+    "id": "builtin_text-JK5qi8",
+    "formData": {
+      "text$en": "Date of Travel? (Use this format DD-MM-YYYY)",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T13:04:43.905Z",
+    "modifiedOn": "2021-12-26T10:19:17.228Z"
+  },
+  {
+    "id": "builtin_text-7DnA28",
+    "formData": {
+      "text$en": "No. of people?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T13:07:28.023Z",
+    "modifiedOn": "2021-10-26T13:07:28.023Z"
+  },
+  {
+    "id": "builtin_text-S_R1Y2",
+    "formData": {
+      "text$en": "Name: {{user.Name}} \nNational ID: {{user.IDno}} \nEmail  Address: {{user.email}} \nPhone number: {{user.phone}} \n\nPlace to enquire: {{user.place}}\n\nCity choice: {{user.city}} city \nNumber of people: {{user.noOfpeople}} \nSet on date: {{user.dateoftravel}}\n",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T13:18:05.720Z",
+    "modifiedOn": "2022-01-07T14:09:11.901Z"
+  },
+  {
+    "id": "builtin_text-St_QBA",
+    "formData": {
+      "text$en": "Thank you enquiry has been received check your email and a destination expert with contact you soon.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T13:40:04.194Z",
+    "modifiedOn": "2022-01-10T14:42:58.197Z"
+  },
+  {
+    "id": "builtin_text-DZHeAd",
+    "formData": {
+      "text$en": "Please what is  your phone number?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-10-26T14:37:25.873Z",
+    "modifiedOn": "2021-10-26T14:37:25.873Z"
+  },
+  {
+    "id": "builtin_text-aP3YPT",
+    "formData": {
+      "text$en": "Sorry 😢 What kind of help do you need?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T08:42:35.439Z",
+    "modifiedOn": "2021-11-26T08:42:35.439Z"
+  },
+  {
+    "id": "builtin_text-U5QAHf",
+    "formData": {
+      "text$en": "Mombasa police are always there for you!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T08:52:50.920Z",
+    "modifiedOn": "2021-11-26T09:10:05.162Z"
+  },
+  {
+    "id": "builtin_text-0Dz3s7",
+    "formData": {
+      "text$en": "Call now: \nKenya Police Headquarters MSA 041 2322499\nMombasa Central Police Station 041-225501\nNyali Police Station 041-477555\nMombasa Urban OCPD Office 041-230706",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:00:17.208Z",
+    "modifiedOn": "2021-11-26T09:24:52.973Z"
+  },
+  {
+    "id": "builtin_text-vy-LBV",
+    "formData": {
+      "text$en": "Call now: \nKenya Police Headquarters NRB 041 2311400\nNairobi Central OCPD 020-220117\nNairobi Central Police Station 020-225685\nParkalnds Police Station 020-3742238\nKasarani Police Station 020-8563222",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:05:01.197Z",
+    "modifiedOn": "2021-11-26T09:25:29.255Z"
+  },
+  {
+    "id": "builtin_text-Dj0K9m",
+    "formData": {
+      "text$en": "Call now: \nKenya Police Headquarters KIS 041 23565499\nKisumu OCPD’s Office 057-23594\nNyando OCPD 057-821167\nRachuonyo Hotline 059-31200 \n\n",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:05:33.764Z",
+    "modifiedOn": "2021-11-26T09:24:06.225Z"
+  },
+  {
+    "id": "builtin_text-W3BtVk",
+    "formData": {
+      "text$en": "Nairobi police are always there for you!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:10:25.291Z",
+    "modifiedOn": "2021-11-26T09:10:25.291Z"
+  },
+  {
+    "id": "builtin_text-KVWl2v",
+    "formData": {
+      "text$en": "Kisumu police are always there for you!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:10:51.001Z",
+    "modifiedOn": "2021-11-26T09:10:51.001Z"
+  },
+  {
+    "id": "builtin_text-vGaLSP",
+    "formData": {
+      "text$en": "Someone is always there to talk to you! 😥",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:34:51.214Z",
+    "modifiedOn": "2021-11-26T09:48:48.052Z"
+  },
+  {
+    "id": "builtin_text-Qxec0d",
+    "formData": {
+      "text$en": "Call now:\n\nMental Wellness Kenya:  +254 717 234 621\nCognitive Behaviour Therapy: +254 739 935 333 or +254 756 454 585\nOasis Africa: 254 725 366 614 and +254 (0) 110 862 23\nEmergency Medicine Kenya Foundation  suicide prevention:  0800 723 253\nBefriender’s Kenya: +254 722 178 177",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:39:53.503Z",
+    "modifiedOn": "2021-11-26T09:39:53.503Z"
+  },
+  {
+    "id": "builtin_text-ezGak3",
+    "formData": {
+      "text$en": "Mombasa medical care and ambulance services are always on standby to help.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:54:40.860Z",
+    "modifiedOn": "2021-11-26T09:54:40.860Z"
+  },
+  {
+    "id": "builtin_text-oRf1n2",
+    "formData": {
+      "text$en": "Nairobi medical care and ambulance services are always on standby to help",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:55:09.553Z",
+    "modifiedOn": "2021-11-26T09:55:09.553Z"
+  },
+  {
+    "id": "builtin_text-uA1bZl",
+    "formData": {
+      "text$en": "Kisumu medical care and ambulance services are always on standby to help",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T09:56:32.664Z",
+    "modifiedOn": "2021-11-26T09:56:32.664Z"
+  },
+  {
+    "id": "builtin_text-j-zCzP",
+    "formData": {
+      "text$en": "Contact:\nCity Council Ambulance: +254-202224281\nAvenue Rescue Services: 0722570711\nAMREF Flying Doctors: +254 20 699 2299\nIvory Health Solutions: 0726 998 880",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T10:01:16.295Z",
+    "modifiedOn": "2021-11-26T10:01:16.295Z"
+  },
+  {
+    "id": "builtin_text-r90Ghu",
+    "formData": {
+      "text$en": "Contact:\nSt John Ambulance-Coast : +254-412490625\nAar Ambulance Services:  0729 933559\nSt John Ambulance : 0721 611555\nJosmori Ambulance Service: 0700 767664",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": [
+        "Call Now: \nSt John Ambulance : 0721 611555\nSt John Ambulance-Coast : +254-412490625\nAar Ambulance Services:  0729 933559\nJosmori Ambulance Service: 0700 767664"
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T10:06:20.002Z",
+    "modifiedOn": "2021-11-26T10:06:20.002Z"
+  },
+  {
+    "id": "builtin_text-HIrjw6",
+    "formData": {
+      "text$en": "Call for help:\nST JOHN AMBULANCE-  0723 956649\nAMREF Flying Doctors: 020 6992000\nThe Aga Khan Hospital: +254 57 2020005\nAvenue Healthcare Kisumu: 0718 860200",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T10:17:23.839Z",
+    "modifiedOn": "2021-11-26T10:17:23.839Z"
+  },
+  {
+    "id": "builtin_text-DcBb1K",
+    "formData": {
+      "text$en": "Mombasa fire fighters are always there to help!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T10:23:30.177Z",
+    "modifiedOn": "2021-11-26T10:23:30.177Z"
+  },
+  {
+    "id": "builtin_text--Ja5bD",
+    "formData": {
+      "text$en": "Contact the best fire emergency company in Mombasa:\nMombasa Port Fire Services: 0709 092 999\nKenya Red Cross: 0703 037 000\nMombasa County Main Fire Station: +254738222555\nChangamwe Fire Station: +254738222555",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T10:28:48.426Z",
+    "modifiedOn": "2021-11-26T10:28:48.426Z"
+  },
+  {
+    "id": "builtin_text-MYSsn-",
+    "formData": {
+      "text$en": "Nairobi fire figfhters are always there on standby!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T10:30:35.855Z",
+    "modifiedOn": "2021-11-26T10:34:52.716Z"
+  },
+  {
+    "id": "builtin_text-asrWYG",
+    "formData": {
+      "text$en": "Contact:\nG4S Kenya: +254 0711 042 000\nFiretec International Limited: 0722 792 999\nOpticom Kenya: +254 020 268 6857\nFireline Safety Kenya: 0700 022 222 ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T10:33:14.752Z",
+    "modifiedOn": "2021-11-26T10:33:14.752Z"
+  },
+  {
+    "id": "builtin_text-qOgTf1",
+    "formData": {
+      "text$en": "Kisumu Fire Fighters are always there on standby!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T10:34:29.726Z",
+    "modifiedOn": "2021-11-26T10:34:29.726Z"
+  },
+  {
+    "id": "builtin_text-_GANvK",
+    "formData": {
+      "text$en": "Call:\nKisumu Fire Station: 0738 395 395\nKenya Red Cross: 0703 037 000\nG4S Kenya: 0732 172 000\nFireline Safety Kenya: 0700 022 222",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T10:41:12.138Z",
+    "modifiedOn": "2021-11-26T10:41:12.138Z"
+  },
+  {
+    "id": "builtin_text-7v4E2e",
+    "formData": {
+      "text$en": "Kindly be patient as we connect you to the next avilable agent",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": [
+        "Be patient available agent will reach out to you in a few minutes."
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T11:04:19.500Z",
+    "modifiedOn": "2021-11-26T11:09:26.826Z"
+  },
+  {
+    "id": "builtin_text-4G_YsW",
+    "formData": {
+      "text$en": "Be patient you are being transferred to an agent. An agent will be joining shortly to assist you. Thank You!\n\nYou can type \"Home\" to return to the main menu!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T12:11:19.862Z",
+    "modifiedOn": "2022-01-07T14:07:20.741Z"
+  },
+  {
+    "id": "builtin_text-9nsQSi",
+    "formData": {
+      "text$en": "You can type \"Home\" to return to the main menu.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-26T12:12:56.098Z",
+    "modifiedOn": "2022-01-05T13:57:44.144Z"
+  },
+  {
+    "id": "builtin_text-EoYqF_",
+    "formData": {
+      "text$en": "Choose given choices",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-27T21:20:32.990Z",
+    "modifiedOn": "2021-11-27T21:20:32.990Z"
+  },
+  {
+    "id": "builtin_text-5O7PxK",
+    "formData": {
+      "text$en": "Please choose one of the given choices!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-27T22:16:41.683Z",
+    "modifiedOn": "2021-11-27T22:16:41.683Z"
+  },
+  {
+    "id": "builtin_text-EnTnEy",
+    "formData": {
+      "text$en": "Please select one of the options given!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-27T22:28:25.398Z",
+    "modifiedOn": "2021-11-27T22:28:25.398Z"
+  },
+  {
+    "id": "builtin_text-KZnYhp",
+    "formData": {
+      "text$en": "Please select one of the city in the choices!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-11-27T22:44:15.227Z",
+    "modifiedOn": "2021-11-27T22:44:15.227Z"
+  },
+  {
+    "id": "builtin_text-00VlXW",
+    "formData": {
+      "text$en": "{{user.SubjectIssue}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-26T09:23:58.446Z",
+    "modifiedOn": "2021-12-26T09:43:03.014Z"
+  },
+  {
+    "id": "builtin_text-uLE6rQ",
+    "formData": {
+      "text$en": "\n<center>SOLACE TOURS COMPANY</center>\n<br>..................................................................................................................<br>\n\n<p> Dear Agent Amos, </p>\n\n<p> A customer {{user.Name}} would like to talk to a human about {{user.SubjectIssue}} kindly connect with him/her. </P>\n\n\n<p>\nClick here to reach out to them:  \n<a href=\"https://f93c-105-160-68-19.ngrok.io/studio/sutomeme/modules/hit\">HERE</a>\n</p>\n\n\n<p> Regards,</p>\n<p> Solace Tours Inc.</p>\n\n\n\n<div>\n<p>\nThis email was sent by Solace Tour Inc. </p>\n\n<p> Nairobi, Kenya </p>\n\n<p> Solace Tours Inc.  All rights reserved. </p>\n</div>",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-26T09:24:39.288Z",
+    "modifiedOn": "2022-01-13T08:13:03.576Z"
+  },
+  {
+    "id": "builtin_text-jpilvc",
+    "formData": {
+      "text$en": "No agent was found please try again later",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-26T09:30:40.450Z",
+    "modifiedOn": "2021-12-26T09:30:40.450Z"
+  },
+  {
+    "id": "builtin_text-cAP84L",
+    "formData": {
+      "text$en": "What's the subject issue?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-26T09:37:33.652Z",
+    "modifiedOn": "2021-12-26T09:37:33.652Z"
+  },
+  {
+    "id": "builtin_text-E5KVNI",
+    "formData": {
+      "text$en": "Solace Tours Enquiry ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-26T10:01:49.633Z",
+    "modifiedOn": "2021-12-26T10:35:36.505Z"
+  },
+  {
+    "id": "builtin_text-gnX5N9",
+    "formData": {
+      "text$en": "\n\n\n                      <p> SOLACE TOURS COMPANY </p>\n\n<p> Dear {{user.Name}}, </p> \n\n<br>....................................................................................................................................................................................<br>\n<p>\n\n\nYou have made an enquiry about {{user.place}}  in {{user.city}} City for {{user.noOfpeople}} people set on date {{user.dateoftravel}}.\n\n\n</p>\n\n<p> Great Choice! Our destination expert with contact you soon. </p>\n\n <p Regards, </p>\n<p> Solace Tour Inc </p>\n\n<p> Nairobi, Kenya </p>\n\n",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-26T10:02:48.798Z",
+    "modifiedOn": "2022-01-13T07:32:11.760Z"
+  },
+  {
+    "id": "builtin_text-w64mgq",
+    "formData": {
+      "text$en": "Ooops I did not capture that 😥 Re-enter your details again.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-26T10:14:03.113Z",
+    "modifiedOn": "2021-12-26T10:14:03.113Z"
+  },
+  {
+    "id": "builtin_text-LbCJEb",
+    "formData": {
+      "text$en": "1. Kenya-mombasa-Fort-jesus\n2. Kenya-mombasa-Tusks\n3. Kenya-mombasa-Go-karts\n4. Kenya-mombasa-Mamba-village-centre\n5. Kenya-mombasa-Marine-national-park\n6. Kenya-mombasa-Arabuko-sokoke-national-forest\n7. Kenya-mombasa-Haller-park",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-26T10:53:17.428Z",
+    "modifiedOn": "2021-12-26T10:56:24.123Z"
+  },
+  {
+    "id": "builtin_text-OOwgk4",
+    "formData": {
+      "text$en": "CUSTOMER FEEDBACK",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-31T04:37:14.362Z",
+    "modifiedOn": "2021-12-31T04:37:14.362Z"
+  },
+  {
+    "id": "builtin_text-7FwmLB",
+    "formData": {
+      "text$en": "<p> Here is a customer's feedback on how to improve the Solace Tour Chatbot interaction experience. </p> \n\n<p> The feedback score:  {{user.feedbackScore}} rating! </p> \n\n<p> {{user.feedbackImprove}}</p> \n\n\n<p> Reach out to the customer via their email: {{user.email}} </p> ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-31T04:40:43.845Z",
+    "modifiedOn": "2022-01-05T14:03:15.201Z"
+  },
+  {
+    "id": "builtin_text-e2NPt4",
+    "formData": {
+      "text$en": "I did not capture that try again later.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-12-31T04:47:09.765Z",
+    "modifiedOn": "2021-12-31T04:47:09.765Z"
+  },
+  {
+    "id": "builtin_text-HS9Php",
+    "formData": {
+      "text$en": "What is your age?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T10:50:03.035Z",
+    "modifiedOn": "2022-01-06T10:58:34.363Z"
+  },
+  {
+    "id": "builtin_text-QTgT9t",
+    "formData": {
+      "text$en": "Your gender is...? (Male or Female)",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T11:01:55.259Z",
+    "modifiedOn": "2022-01-06T11:02:53.418Z"
+  },
+  {
+    "id": "builtin_text-O7W5-c",
+    "formData": {
+      "text$en": "Which period do you travel most? (e.g June-August)",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T11:05:19.652Z",
+    "modifiedOn": "2022-01-06T11:05:19.652Z"
+  },
+  {
+    "id": "builtin_text-s7SAmJ",
+    "formData": {
+      "text$en": "What is your favourite travel activity? (e.g Local culture, historical buildings)",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T11:20:29.047Z",
+    "modifiedOn": "2022-01-06T11:31:46.457Z"
+  },
+  {
+    "id": "builtin_text-hBNntW",
+    "formData": {
+      "text$en": "Thank you! 😊",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T11:31:19.231Z",
+    "modifiedOn": "2022-01-06T11:31:19.231Z"
+  },
+  {
+    "id": "builtin_text-bhUF5N",
+    "formData": {
+      "text$en": "You should check out the following place: 😊",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T12:16:56.000Z",
+    "modifiedOn": "2022-01-06T15:24:29.848Z"
+  },
+  {
+    "id": "builtin_text-ZZeTFt",
+    "formData": {
+      "text$en": "Where are you staying?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T14:53:03.862Z",
+    "modifiedOn": "2022-01-06T14:53:03.862Z"
+  },
+  {
+    "id": "builtin_text-xUoFyL",
+    "formData": {
+      "text$en": "How many days are you planning to stay... Approximate?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T15:00:24.748Z",
+    "modifiedOn": "2022-01-06T15:00:24.748Z"
+  },
+  {
+    "id": "builtin_text-Qi54Nk",
+    "formData": {
+      "text$en": "Name: {{user.Name}} \nNational ID: {{user.IDno}} \nEmail  Address: {{user.email}} \nPhone number: {{user.phone}} \n\nAccommodation/Hotel choice: {{user.hotel}}\nRoom category: {{user.hotelcategory}} \n\nCity choice: {{user.city}} city \nNumber of people: {{user.noOfpeople}} \nSet on date: {{user.dateoftravel}} \n",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T09:14:39.407Z",
+    "modifiedOn": "2022-01-07T14:10:09.552Z"
+  },
+  {
+    "id": "builtin_text-WfmZPd",
+    "formData": {
+      "text$en": "You have entered an invalid response 😥. Please choose one of the choices given!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-10T11:39:02.144Z",
+    "modifiedOn": "2022-01-10T11:53:23.780Z"
+  }
+]

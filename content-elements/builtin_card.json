@@ -1,0 +1,741 @@
+[
+  {
+    "id": "builtin_card-l2P7ee",
+    "formData": {
+      "title$en": "Fort Jesus",
+      "subtitle$en": "Fort Jesus port",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/dr8x98kmwssjwz3khy9h-kenya-mombasa-fort-jesus.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More info",
+          "url": "twitter.com"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T09:39:47.518Z",
+    "modifiedOn": "2022-01-06T09:39:47.518Z"
+  },
+  {
+    "id": "builtin_card-jCPd03",
+    "formData": {
+      "title$en": "Fort Jesus",
+      "subtitle$en": "The Fort, built by the Portuguese in 1593-1596 to the designs of Giovanni Battista Cairati to protect the port of Mombasa, is one of the most outstanding and well-preserved examples of 16th Portuguese military fortification and a landmark in the history of this type of construction. The Fort's layout and form reflected the Renaissance ideal that perfect proportions and geometric harmony are to be found in the human body.",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/zglja6fzeuknd8d3mbyr-kenya-mombasa-fort-jesus.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://whc.unesco.org/en/list/1295/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T12:10:51.289Z",
+    "modifiedOn": "2022-01-06T12:11:03.892Z"
+  },
+  {
+    "id": "builtin_card-cPFPmF",
+    "formData": {
+      "subtitle$en": "Haller Park Mombasa is a hit with animal lovers. Wildlife found here includes giraffes, Cape buffalo, zebras, waterbucks, and hippos. A highlight is the giraffe feeding, but be sure to check the times before visiting.The park was also home to a famous interspecies couple that became an Internet sensation after the 130-year-old tortoise, Mzee, adopted Owen, an orphaned hippo. Birds are also abundant in the park.",
+      "title$en": "Haller Park",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/yczehzyxddkwf7qai25q-kenya-mombasa-haller-park.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://en.wikipedia.org/wiki/Haller_Park"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T12:20:21.378Z",
+    "modifiedOn": "2022-01-06T12:20:21.378Z"
+  },
+  {
+    "id": "builtin_card-zVM6-J",
+    "formData": {
+      "subtitle$en": "Mombasa Go-Kart is a hit with speedsters and kids of all ages. Zoom around the smooth concrete track in go-karts, bounce around on the off-road buggies, or learn to dig in a Bobcat excavator.After all the excitement, you can enjoy a snack at the family-friendly restaurant with computer games, a large playground, and a big screen showing sporting events. The Go-Kart track is floodlit at night.Location: Bamburi Beach, Mombasa",
+      "title$en": "Mombasa Go-Kart",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/z37sk1hqzqckvrz0mku3-kenya-mombasa-go-karts.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://www.mombasa-gokart.com/",
+          "title": "More Info"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T12:24:58.091Z",
+    "modifiedOn": "2022-01-06T12:24:58.091Z"
+  },
+  {
+    "id": "builtin_card-MpWdDi",
+    "formData": {
+      "subtitle$en": "Generally reached by dhow, Wasini Island is a popular day trip from Mombasa. Dolphins regularly cruise these waters, and passengers can stop to snorkel and dive the coral reefs along the way.The island itself is tiny - only five square kilometers. Sightseeing opportunities include visiting Wasini Village, strolling around the coastal scrub where ancient Swahili ruins lie, exploring the exposed coral gardens, and dining on fresh seafood.The village of Shimoni is the launching point for Wasini Island tours and was once the headquarters of the Imperial British East Africa Company. Here, you can explore the Shimoni Caves, thought to hold slaves before their shipment to Arabia",
+      "title$en": "Wasini Island",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/a8j34dqhyelixunp49id-kenya-mombasa-wasini-island.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://en.wikipedia.org/wiki/Wasini_Island"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T12:30:18.467Z",
+    "modifiedOn": "2022-01-06T12:30:18.467Z"
+  },
+  {
+    "id": "builtin_card-8Us-ES",
+    "formData": {
+      "subtitle$en": "Are you looking for things to buy in Mombasa? At Bombolulu Workshops you can shop. At the cultural center, you can enjoy tribal dance performances and explore traditional homesteads found throughout Kenya.Address: Workshop Road, Bombolulu",
+      "title$en": "Bombolulu Workshops and Cultural Centre",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/eepbwweryqsf0l6vnfjg-kenya-mombasa-bombolulu-workshops-and-cultural-centre.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://www.apdk.org/bombolulu-workshops-cultural-centre/",
+          "title": "More Info"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T12:35:27.412Z",
+    "modifiedOn": "2022-01-07T12:38:47.904Z"
+  },
+  {
+    "id": "builtin_card-Qg7gIH",
+    "formData": {
+      "subtitle$en": "Rabai is well known in the annals of history as the place where Christianity and modern learning in Kenya started well over 150 years ago. In 1994 the Krapf Memorial Museum was founded to give formal and a perpetual reminder to monumental events during the advent of early missionaries. Stories about the first missionaries were passed on by word of mouth and are still told today. Built in 1846 as the first Church edifice in Kenya, Rabai is situated about 25 km north-west of Mombasa, off the Nairobi-Mombasa highway on Mazeras-Kaloleni road, about half an hour?s drive from Mombasa.",
+      "title$en": "Rabai Museum",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/5sg9mjinh6riil5u9z2j-Rabai%20Meuseum.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.museums.or.ke/rabai-museum/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T12:50:08.034Z",
+    "modifiedOn": "2022-01-06T12:50:08.034Z"
+  },
+  {
+    "id": "builtin_card-f2X595",
+    "formData": {
+      "subtitle$en": "The beaches on the north side of Mombasa are a little livelier than the south coast. Palm-lined shores, crystal-clear waters, coral reefs, and a profusion of water sports, resorts, and entertainment venues provide plenty of tourist action. The resorts are also closer to the airport and Mombasa City. Nyali beach, Bamburi Beach and Shanzu Beach are the most common.",
+      "title$en": "North Coast Beaches",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/adwbxkzgo0zuaykrc4go-kenya-mombasa-north-coast-beaches.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.thrillophilia.com/attractions/north-coast-beaches"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T12:56:43.621Z",
+    "modifiedOn": "2022-01-06T12:56:43.621Z"
+  },
+  {
+    "id": "builtin_card--OBDOO",
+    "formData": {
+      "subtitle$en": "Kenya's first national park, Nairobi National Park lies only seven kilometers from the skyscrapers of Nairobi's city center. A haven for wildlife, the park is also a rhino sanctuary, which protects more than 50 of these critically endangered creatures.In addition to the rhinos, you can see lions, gazelles, buffaloes, warthogs, cheetahs, zebras, giraffes, and ostriches, and more than 400 species of birds have been recorded in the wetlands.Nairobi National Park is also a famous ivory burning site. ",
+      "title$en": "Nairobi National Park",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/qfqpxawulfi6f29zi9z0-kenya-nairobi-nairobi-national-park.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "http://www.kws.go.ke/parks/nairobi-national-park",
+          "title": "More Info"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T13:18:28.845Z",
+    "modifiedOn": "2022-01-06T13:18:28.845Z"
+  },
+  {
+    "id": "builtin_card-PECtiS",
+    "formData": {
+      "subtitle$en": "The National Museum in Nairobi is an educational way to spend a few hours on a city stopover. The museum displays diverse cultural and natural history exhibits including more than 900 stuffed birds and mammals, fossils from Lake Turkana, ethnic displays from various Kenyan tribal groups, and exhibits of local art. In the Geology Gallery, you can explore an impressive collection of rocks and minerals and learn about tectonic plates and the life cycle of a volcano.Address: Museum Hill Road, Nairobi7. Bomas of Kenya",
+      "title$en": "Nairobi National Museum",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/cu5f9z6ddxsiwbwwxdqp-kenya-nairobi-nairobi-national-museum.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.museums.or.ke/nairobi-national-museum/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T13:22:41.284Z",
+    "modifiedOn": "2022-01-06T13:22:41.284Z"
+  },
+  {
+    "id": "builtin_card-Sew1KQ",
+    "formData": {
+      "subtitle$en": "About 10 kilometers from Nairobi, Bomas of Kenya is a living museum celebrating the colorful tribes of Kenya. This is a great place to learn about the lifestyle, art, music, crafts, and culture of each tribe.The complex encompasses a recreated traditional village with homesteads or bomas, each one reflecting the culture of a major ethnic group. Every afternoon, a team performs traditional dances and songs in the large theater. Audience participation makes the performances even more enjoyable.Location: Forest Edge Road, off Langata Road, Mageso Chember",
+      "title$en": "Bomas of Kenya",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/bcsyzqqgqcugmws1297s-kenya-nairobi-bomas-of-kenya.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.bomasofkenya.co.ke/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T13:26:18.906Z",
+    "modifiedOn": "2022-01-06T13:26:18.906Z"
+  },
+  {
+    "id": "builtin_card-Kpvwvb",
+    "formData": {
+      "subtitle$en": "\"Ngong\" means \"knuckles\" in Maasai, a fitting name since these beautiful pointed green hills resemble the back of a fist facing the sky.The Ngong Hills are the peaks of a ridge overlooking the Great Rift Valley.Several walking trails traverse the hills, offering beautiful views of the valleys below. Wildlife is also visible in the area.Address: Great Rift Valley, Mageso Chember, Nairobi",
+      "title$en": "Ngong Hills Hike",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/no8r28pzjdzpw3u1kae1-kenya-nairobi-ngong-hills.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.alltrails.com/trail/kenya/rift-valley/ngong-hills"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T13:35:47.676Z",
+    "modifiedOn": "2022-01-06T13:35:47.676Z"
+  },
+  {
+    "id": "builtin_card-3iUe-U",
+    "formData": {
+      "subtitle$en": "The Solar Ice Rink at Panari is the only one of its kind in East and Central Africa. It measures 32 × 12 meters with an ice skating surface area of 15,000 square feet. It is totally enclosed with ice temperature at -25oC and the air temperature inside the hall is 12oC. The rink can accommodate 200 skaters at any time and is open seven days a week from 11.00 am until 10.00pm.",
+      "title$en": "The Solar Ice Rink",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/ck83ylk3v8spz34mjuin-Solar%20Ice%20Rink.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.panarihotels.com/hotel-nairobi/ice-rink.html"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T13:39:09.953Z",
+    "modifiedOn": "2022-01-06T13:39:09.953Z"
+  },
+  {
+    "id": "builtin_card-Ueo417",
+    "formData": {
+      "subtitle$en": "One of Nairobi's top tourist attractions, the Karen Blixen Museum, at the foot of the Ngong Hills, is the former home of the famous namesake Out of Africa author. Karen Blixen, also known by her pen name, Isak Dinesen, lived in the house from 1917 to 1931, where she ran a coffee plantation.Today, you can tour the well-preserved colonial farmhouse, a kitchen in a separate building, a coffee-drying plant in the woodland, and an agricultural college on the grounds.Furniture that belonged to Karen Blixen and her husband is on display, as well as photographs and books owned by Karen and her lover, Denys Finch Hatton. Enthusiastic guides bring the story of Karen Blixen and colonial Kenya to life.Address: Karen Road, Nairobi",
+      "title$en": "Karen Blixen Museum",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/f9xpgk1c2b3dav5qw945-kenya-nairobi-karen-blixen-museum.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.museums.or.ke/karen-blixen/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T13:50:24.315Z",
+    "modifiedOn": "2022-01-06T13:50:24.315Z"
+  },
+  {
+    "id": "builtin_card-q6sAyj",
+    "formData": {
+      "subtitle$en": "The museum was opened in 1980. It is located along the Kisumu- Kericho Highway. It features a gallery of cultural materials of people from Western Kenya, in particular, Luo artefacts and other traditional aspects like the Luo homestead. It also features an outdoor snake park, tortoise pens, aquariums and a crocodile site.",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://www.museums.or.ke/kisumu/",
+          "title": "More Info"
+        }
+      ],
+      "title$en": "Kisumu Museum",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/v41adjspzud4y67n6uuo-Kisumu%20Museum.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T13:56:53.654Z",
+    "modifiedOn": "2022-01-06T13:56:53.654Z"
+  },
+  {
+    "id": "builtin_card-Y71pqZ",
+    "formData": {
+      "subtitle$en": "It is an island of serenity and beauty located off the Kisumu- Bondo road. It takes approximately 45 minutes with a speed boat direct from Kisumu.  A wide variety of animals like hippos, baboons, monitor lizards, snakes, Nile crocodiles, impalas, sitatunga antelope, waterbucks, zebras and different species of birds can be found at the park.",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "http://www.kws.go.ke/content/ndere-island-national-park",
+          "title": "More Info"
+        }
+      ],
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/m5v4yxn0m0rk90us4ans-Ruma_National_Park.jpg",
+      "title$en": "Ndere Island National Park"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T13:59:53.420Z",
+    "modifiedOn": "2022-01-06T13:59:53.420Z"
+  },
+  {
+    "id": "builtin_card-LetbFz",
+    "formData": {
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://ioverlander.com/places/26563-dunga-hill-camp",
+          "title": "More Info"
+        }
+      ],
+      "subtitle$en": "It is a serene site located on the shores of Lake Victoria that offers a perfect environment for camping, picnics, kayaking, boat riding, hippo watching, bird watching and team building activities. Luxury accommodation is offered at the facility in tented camps.",
+      "title$en": "Dunga Hill Camp Hike",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/zgx223fzmblxr6go2j6g-Dunga-Hill-Camp.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T14:02:28.252Z",
+    "modifiedOn": "2022-01-06T14:02:28.252Z"
+  },
+  {
+    "id": "builtin_card-k1XBtz",
+    "formData": {
+      "subtitle$en": "It is a large rock formation, with about 3 rocks on top. It is situated approximately 29 kilometres from Kisumu Town. It is a sacred site amongst the locals who live there. They conduct prayers and fasting sessions at the facility. It is also a pilgrimage site for the Legio Maria sect. There is a picnic area just below the rocks where you can spend some quality time with your family or friends.",
+      "title$en": "Kit Mikayi",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/cq8lnqr4fx1lucd1qsh2-Kit-Mikayi.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.thrillophilia.com/attractions/kit-mikayi"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T14:04:45.811Z",
+    "modifiedOn": "2022-01-06T14:04:45.811Z"
+  },
+  {
+    "id": "builtin_card-B0qd8p",
+    "formData": {
+      "title$en": "St. Theresa Cathedral",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/pczpla4c1c6na4ij135y-St.%20Theresa%20Cathedral.jpg",
+      "subtitle$en": "One can't help the feeling of reverence in this architectural beauty at the centre of Kisumu city. The altar cast in elegant marble and the pictures of saints intricately collaged in the stained glass windows complete with cedar pews, back dropped with sombre melody from the classical piano somehow make one to feel the presence of heaven.",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g317064-d8375612-Reviews-St_Theresa_Cathedral-Kisumu_Nyanza_Province.html"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T14:13:54.411Z",
+    "modifiedOn": "2022-01-06T14:13:54.411Z"
+  },
+  {
+    "id": "builtin_card-QzCIWu",
+    "formData": {
+      "subtitle$en": "Boat Tours & Water Sports in KisumuOutdoor Activities, Boat Tours & Water Sports, Tours, Kayaking & Canoeing, Boat RentalsKisumu, Kenya  +254 715 011582",
+      "title$en": "Kisumu Watersports Academy",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/l8dja85n8ic18kasp7cd-Kisumu%20Water%20Sport%20Academy.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.tripadvisor.com/Attraction_Review-g317064-d15813654-Reviews-Kisumu_Watersports_Academy-Kisumu_Nyanza_Province.html"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T14:43:20.005Z",
+    "modifiedOn": "2022-01-06T14:43:20.005Z"
+  },
+  {
+    "id": "builtin_card-dztdJu",
+    "formData": {
+      "subtitle$en": "Paradise Beach Resort Convention Centre and Spa offers themed 4-star accommodation, as well as an outdoor pool and a private beach. It also features an express check-in and check-out feature, a kids club and a kids pool.The resort has recently undergone refurbishment and offers an airport shuttle, babysitting/child services and a 24-hour reception. Guests can try out the recreational facilities on offer, such as a dart board and a playground.PrideInn Paradise Beach Resort Convention Centre and Spa has 240 well-appointed rooms that are filled with a range of essential facilities to ensure guests have a comfortable stay. They are also equipped with a refrigerator and a hair dryer.",
+      "title$en": "Pride Inn Resort",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/gcord14f9yvuev36dyx1-Pride%20Inn%20hotel.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.prideinn.co.ke/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T14:50:59.973Z",
+    "modifiedOn": "2022-01-06T14:51:59.542Z"
+  },
+  {
+    "id": "builtin_card-yeokDn",
+    "formData": {
+      "subtitle$en": "Featuring a private beach and an outdoor swimming pool, this 5-star hotel is located in Mombasa. It also features outdoor tennis courts, a sauna and 24-hour room service.Serena Beach Resort & Spa has been recently refurbished and offers a beauty centre, an express check-in and check-out feature and a coffee bar. Guests can enjoy the recreational facilities on offer, such as squash courts, a dart board and a playground. Also available at the hotel is a 24-hour front desk, which offers luggage storage and an airport shuttle service.Serena Beach Resort & Spa provides 164 rooms, all of which are equipped with a spa bath, a mini bar and cable/satellite channels. Hot drinks can be made with complimentary coffee and tea supplies.",
+      "title$en": "Serena Beach Resort & Spa",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/wm1697yp75hhzhuolggy-Serena%20Beach%20Resort%20and%20Spa.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.serenahotels.com/serena-beach"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T15:22:42.627Z",
+    "modifiedOn": "2022-01-06T15:22:42.627Z"
+  },
+  {
+    "id": "builtin_card-m1ukNu",
+    "formData": {
+      "subtitle$en": "Kenya Bay Beach Hotel is an easy drive from City Mall and Kenya Methodist University. It also offers an outdoor pool, a beauty centre and free Wi-Fi.Featuring a kids club and a kids pool, the resort is an excellent choice for families. Welcoming and helpful staff are available 24 hours a day. Body treatments, an airport shuttle and a concierge are also offered at the resort.There are 106 rooms at Kenya Bay Beach Hotel, each offering all the essentials to ensure a comfortable stay.Kenya Bay Beach Hotel has its own on-site restaurant, perfect for those wishing to eat in. A relaxing drink can be savored in the in-house bar.",
+      "title$en": "Kenya Bay Beach Hotel ",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/9df3gwd7rod1wgpdhpph-Kenya%20Bay%20Beach%20Hotel.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "http://www.kenyabay.com/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T15:25:48.686Z",
+    "modifiedOn": "2022-01-06T15:25:48.686Z"
+  },
+  {
+    "id": "builtin_card-6dpQsb",
+    "formData": {
+      "subtitle$en": "Located in Nairobi, Red Buffalo House Hotel is a 4-minute drive from Nairobi National Park and 9 minutes from Giraffe Centre. The front desk is staffed during limited hours. Free self parking is available onsite.",
+      "title$en": "Red Buffalo House Hotel",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/df2hkek5g8lvjr9ioemx-hotelsdotcom-1304464608-94b01432_w-145654.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.redbuffalohouse.com/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-06T15:38:19.369Z",
+    "modifiedOn": "2022-01-06T15:38:19.369Z"
+  },
+  {
+    "id": "builtin_card-DNAxbu",
+    "formData": {
+      "subtitle$en": "With a stay at Hillpark Hotel in Nairobi, you'll be within a 5-minute drive of Kenya Railway Golf Club and Nairobi Hospital. Featured amenities include a business center, complimentary newspapers in the lobby, and dry cleaning/laundry services. This hotel has 6 meeting rooms available for events. Guests may use a roundtrip airport shuttle for a surcharge, and free self parking is available onsite.",
+      "title$en": "Hillpark Hotel",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/5hywgne32g75m7pd5we5-sembo-138325210-bf0c56b4_z.jpg_resizeMode%3DFitInside_formatSettings%3Djpeg(quality-90)-772316.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "http://hillpark-hotel.nairobi-hotels-ke.com/en/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T08:14:04.117Z",
+    "modifiedOn": "2022-01-07T08:14:04.117Z"
+  },
+  {
+    "id": "builtin_card-4-jHfl",
+    "formData": {
+      "subtitle$en": "Located in Nairobi, 254 Ole Sereni is in a national park, a 4-minute drive from Nairobi National Park and 6 minutes from Nyayo National Stadium. Featured amenities include complimentary wired Internet access, a business center, and limo/town car service. Planning an event in Nairobi? This hotel has facilities measuring 1894 square feet (176 square meters), including a conference center. A roundtrip airport shuttle is provided for a surcharge (available 24 hours), and free self parking is available onsite.",
+      "title$en": "254 Ole Sereni",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/f92fuuku7z51scnufkya-sembo-138351442-3c9736ed_z.jpg_resizeMode%3DFitInside_formatSettings%3Djpeg(quality-90)-871949.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://www.ole-sereni.com/",
+          "title": "More Info"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T08:16:07.987Z",
+    "modifiedOn": "2022-01-07T08:16:07.987Z"
+  },
+  {
+    "id": "builtin_card-nPpwQd",
+    "formData": {
+      "subtitle$en": "Featuring free WiFi and a spa centre, Acacia Premier Hotel offers accommodation in Kisumu, close to West End Mall. The hotel has a terrace with an outdoor pool and offers views of Lake Victoria.Each room has a flat-screen TV. All rooms have a seating area where you can relax. Some units feature views of the lake. Each room comes with a private bathroom with a bath or shower, with slippers and free toiletries provided.The hotel has an outdoor bar and grill restaurant, a coffee lounge, an all-day dining restaurant and an indoor bar.There is a fitness centre, a 24-hour front desk and free private parking is available on site.",
+      "title$en": "Acacia Premier Hotel",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/adcazxyfyor0pjur0nwn-Acacia%20Premier%20Hotel.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.acaciapremier.com/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T08:21:29.367Z",
+    "modifiedOn": "2022-01-07T08:21:29.367Z"
+  },
+  {
+    "id": "builtin_card-rbq27v",
+    "formData": {
+      "subtitle$en": "Set 1.7 km from Kisumu Museum, Annodas Homes Milimani Kisumu offers accommodation with a shared lounge, a garden and a shared kitchen for your convenience.The bed and breakfast offers a seating area with a flat-screen TV and a private bathroom with a hairdryer and shower.Continental and Full English/Irish breakfast options are available every morning at Annodas Homes Milimani Kisumu.A sun terrace is available on site and cycling can be enjoyed within close proximity of the accommodation.",
+      "title$en": "Annodas Homes Milimani Kisumu",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/gwd5ohvh4ey7ydi3gzp3-Annodas%20Homes%20Milimani%20Kisumu.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.a-hotel.com/kenya/35538-kisumu/4681448-1-annodas-homes-milimani-kisumu/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T08:24:04.915Z",
+    "modifiedOn": "2022-01-07T08:24:04.915Z"
+  },
+  {
+    "id": "builtin_card-XSnBr0",
+    "formData": {
+      "subtitle$en": "Situated in Kisumu, 1 km from Kisumu Museum, The Vic Hotel features accommodation with a restaurant, free private parking, an outdoor swimming pool and a bar. Boasting a garden, the hotel is close to several noted attractions, around 1.5 km from Milimani Shopping Centre, 1.6 km from Kisumu Municipal Market and 1.9 km from Ecobank United Mall. The accommodation provides a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.All rooms are fitted with air conditioning, a flat-screen TV with cable channels, a kettle, a shower, free toiletries and a desk. At the hotel the rooms come with a private bathroom and bed linen",
+      "title$en": "The Vic Hotel ",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/mac7odjk9jkl416xpi97-The%20Vic%20Hotel.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.hotels.com/ho654561/the-vic-hotel-kisumu-kenya/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T08:25:58.225Z",
+    "modifiedOn": "2022-01-07T08:25:58.225Z"
+  },
+  {
+    "id": "builtin_card-USNmFw",
+    "formData": {
+      "subtitle$en": "Suitable for anyone looking for an elegant place to dine on a budget, Distant Relatives Restaurant is an eco-friendly venue located on the enchanting Kilifi Creek. They serve some of the most delicious gourmet dishes in the city for both vegetarians and non-vegetarians. Choose from a variety of garden-grown salads, steaks, tasty fishes and calamari, swahili dishes,  African dishes or grilled prawns.",
+      "title$en": "Distant Relatives Restaurant",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/6pnvdjhc973sy0p8ca5q-Distant%20Relatives%20Restaurant.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "http://www.kilifibackpackers.com/food-drink/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T09:41:49.949Z",
+    "modifiedOn": "2022-01-07T09:41:49.949Z"
+  },
+  {
+    "id": "builtin_card-HkMS2K",
+    "formData": {
+      "subtitle$en": "At Porini Boko Boko Seychelloise Restaurant you will be served authentic African cuisine in a warm and quiet atmosphere. Meals are done to order, served in clay pots and carried over the head, the traditional African way. Enjoy delicious charcoal-grilled meat and fish, seasoned with special Seychelloise sauces and spices. The clay bowl of warm lime-water for washing your hands before and after meals is one cultural aspect that will make this a memorable dining experience",
+      "title$en": "Porini Boko Boko Seychelloise Restaurant",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/rnancaiwe9mmabno9eha-Porini%20Boko%20Boko%20Seychelloise%20Restaurant.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://ke.africabz.com/kilifi/boko-791"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T09:52:44.228Z",
+    "modifiedOn": "2022-01-07T09:52:44.228Z"
+  },
+  {
+    "id": "builtin_card-g79RX8",
+    "formData": {
+      "subtitle$en": "CUISINES African, International, Contemporary, Middle EasternSPECIAL DIETS Vegan Options, Vegetarian Friendly, Gluten Free Options MEALS  Breakfast, Lunch, Dinner, Brunch, Late Night",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/26hbvje3fw0y9irgu3ko-pavilions%20restaurant.jpg",
+      "title$en": "Pavilions Restaurant",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g294210-d1800892-Reviews-Pavilions_Restaurant-Mombasa_Coast_Province.html",
+          "title": "More Info"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T10:00:30.628Z",
+    "modifiedOn": "2022-01-07T10:00:30.628Z"
+  },
+  {
+    "id": "builtin_card-NbwxJz",
+    "formData": {
+      "subtitle$en": "This Fine restaurant offers Chinese cuisine delicacies with friendly professional service.Try our seafood and delicious Oriental dishes prepared by our highly qualified chefs.A fully stocked bar with all types of drinks.Safe and secure parking available.",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g294210-d2034253-Reviews-Galaxy_Chinese_Restaurant-Mombasa_Coast_Province.html",
+          "title": "More Info"
+        }
+      ],
+      "title$en": "Galaxy Chinese Restaurant",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/i33euvqwm2pzqezow3g2-chineness%20mombasa.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T10:17:00.543Z",
+    "modifiedOn": "2022-01-07T10:17:00.543Z"
+  },
+  {
+    "id": "builtin_card-Vg_Fzk",
+    "formData": {
+      "subtitle$en": "For many years, good Mexican and Italian food were sadly missing from Nairobi. A couple of restaurants served bits and bobs—guacamole, maybe a tortilla on the menu—but there wasn’t a great spot dedicated to the cuisine. Happily, all that changed when Fonda came along. Fonda, meaning a welcoming inn, is a fitting name for this laid-back bistro complete with bright yellow walls and rustic crockery. They only use locally sourced, organic ingredients and the menu features inventive new taco fillings like sweet potato and pineapple marinated in an achiote paste, which can be paired with watermelon margaritas.",
+      "title$en": "Fonda",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/moyzypnxchwhi9eijg4h-Fonda.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://fondanbo.com/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T11:08:10.579Z",
+    "modifiedOn": "2022-01-07T11:09:11.929Z"
+  },
+  {
+    "id": "builtin_card-erWGTI",
+    "formData": {
+      "subtitle$en": "Chowpaty, Nairobi’s best vegetarian and Swahili dishes restaurant, serves outrageously tasty dishes from across the Indian subcontinent. On arrival, customers are presented first with a small bowl of warm water to wash their hands in and then with the epic menu. The best item on the menu is the dahi puri: Crispy puffed puri shells are filled with Bombay mix (a crunchy snack mix) and then drizzled with a sweet and sour sauce. Many items on the menu can also be made vegan—just ask. Chowpaty has several locations around town, but the most popular sits in the courtyard at Diamond Plaza, a bustling shopping mall where the Indian community comes for fabrics, clothing, electrical goods, and supermarkets.",
+      "title$en": "Chowpaty restaurant",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/yhceo9sa8xchi2wsnfnk-Chowpaty%20Restaurant.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "text": "https://glovoapp.com/ke/en/nairobi/chowpaty-westlands-ltd-nbo/?utm_source=google&utm_medium=cpc&utm_campaign=google_performance_KE_ALL_Search_cpa_All_FirstOrder_0_NewUsers_en__DigitalBudget_NoPromo_0_12012021&utm_campaignid=12989782945&utm_adgroupid=124525022159&utm_term&utm_matchtype&utm_device=c&gclid=CjwKCAiA5t-OBhByEiwAhR-hm3N2b_iKvm7JZev4yDGVaL9rPHCksvq2tVoRZxp-hN7RvN9L1QRLVxoC3PwQAvD_BwE",
+          "url": "https://glovoapp.com/ke/en/nairobi/chowpaty-westlands-ltd-nbo/?utm_source=google&utm_medium=cpc&utm_campaign=google_performance_KE_ALL_Search_cpa_All_FirstOrder_0_NewUsers_en__DigitalBudget_NoPromo_0_12012021&utm_campaignid=12989782945&utm_adgroupid=124525022159&utm_term&utm_matchtype&utm_device=c&gclid=CjwKCAiA5t-OBhByEiwAhR-hm3N2b_iKvm7JZev4yDGVaL9rPHCksvq2tVoRZxp-hN7RvN9L1QRLVxoC3PwQAvD_BwE"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T11:12:46.808Z",
+    "modifiedOn": "2022-01-07T11:12:46.808Z"
+  },
+  {
+    "id": "builtin_card-pQq1S3",
+    "formData": {
+      "subtitle$en": "On the outskirts of Nairobi on the Langata Road is the world famous Carnivore, known as the Ultimate 'Beast of a Feast', a meat lovers den where a vast selection of succulent meats are charcoal grilled and carved at your table. Adjoining the Carnivore main restaurant is the 'Simba Saloon' - a vibrant informal a la carte restaurant with a childrens playground and filled with variety of  African cuisines.",
+      "title$en": "Carnivore Restaurant",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/2gg1a483rgcaf0knxlyf-the-carnivore-restaurant.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.tripadvisor.com/Restaurant_Review-g294207-d809397-Reviews-The_Carnivore_Restaurant-Nairobi.html"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T11:15:36.982Z",
+    "modifiedOn": "2022-01-07T11:15:36.982Z"
+  },
+  {
+    "id": "builtin_card-KvZVhY",
+    "formData": {
+      "subtitle$en": "This hip little café in the leafy suburb of Loresho feels comfy and welcoming, with candles flickering on the tables throughout the day and a monthly schedule of open-mic sessions for Nairobi’s budding musicians. The menu includes salads, sandwiches, and snacks as well as cold brew coffee with some chinese cuisine. All the furniture here is handmade by the owners and available for purchase. You can even commission your own designs to be made here. After your meal, swing by the farm shop next door for jams, cups, bags of coffee, and more.",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/k2v9beeo5b02oou8342l-Boho%20eatery.jpg",
+      "title$en": "Boho Eatery ",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://boho.co.ke/",
+          "title": "More Info"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T11:21:00.457Z",
+    "modifiedOn": "2022-01-07T11:21:00.457Z"
+  },
+  {
+    "id": "builtin_card-h6jyev",
+    "formData": {
+      "subtitle$en": "Located within Kisumu City, Overlooking Lake Victoria, this refined lakeside hotel only a few minutes drive from both the Kenya Wildlife Impala Park and Lwang'ni Beach. with excellent staff, excellent amenities and great food it an ideal accommodation for both business and leisure travellers.",
+      "title$en": "Acacia Restaurant",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/y2e1agjzy221cdv0i2he-Acacia.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://www.tripadvisor.com/Hotel_Review-g317064-d8470988-Reviews-Acacia_Premier_Hotel-Kisumu_Nyanza_Province.html"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T11:45:08.428Z",
+    "modifiedOn": "2022-01-07T11:45:08.428Z"
+  },
+  {
+    "id": "builtin_card-t82t1a",
+    "formData": {
+      "title$en": "Tawakal Swahili Dishes",
+      "subtitle$en": "Great food,local foods.Delicious tradition foods that are not produced in the region but coast.quality meals in large quantity and at a chiper price.good service and high security.Confidential place with high privacy. Free parking space with nice road .Free fast wifi to all customers with no restrictions. Need snakes and drinks?don't worry they have it.",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/4gnvb6pnn74z9iaoa4zp-tAWAKAL.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "url": "https://www.africabizinfo.com/KE/tawakal-swahili-dishes",
+          "title": "More Info"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T11:49:10.008Z",
+    "modifiedOn": "2022-01-07T11:49:10.008Z"
+  },
+  {
+    "id": "builtin_card-DvBLhb",
+    "formData": {
+      "subtitle$en": "We try to deliver the most genuine experience of the Chinese cuisine to all of our customers. Our dishes testify to the most optimum quality as well as superb taste. We maintain perfection in our cooking procedures by employing top-grade ingredients and spices in our kitchen, such that potential lovers of food are able to make out the subtle details from their favourite Chinese items. ",
+      "title$en": "Oriental Restaurant",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/uciihihkp5b7nczs0aoj-Oriental.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://oriental-restaurant.com/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T11:57:57.835Z",
+    "modifiedOn": "2022-01-07T11:57:57.835Z"
+  },
+  {
+    "id": "builtin_card-KXoN88",
+    "formData": {
+      "title$en": "Cucina BistroI",
+      "subtitle$en": "Italian Pizzeria offering, Authentic, Fresh & Delicious Pizza. This restaurant offers variety of italian foods for customers to choose from",
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/k787nqc4g90adnzv0bw2-fresh-tasty-italian-fare.jpg",
+      "actions$en": [
+        {
+          "action": "Open URL",
+          "title": "More Info",
+          "url": "https://lizily.com/kenya/109432244083897/cucina-bistro"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-01-07T12:03:54.428Z",
+    "modifiedOn": "2022-01-07T12:03:54.428Z"
+  }
+]

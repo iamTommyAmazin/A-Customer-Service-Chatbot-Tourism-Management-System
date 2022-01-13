@@ -1,0 +1,90 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "1747d2ed45",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "live-entry"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "81f2cf2cf0",
+      "name": "Live-agent-wait",
+      "next": [
+        {
+          "condition": "event.nlu.intent.name === 'home'",
+          "node": "main.flow.json#choice-functions"
+        }
+      ],
+      "onEnter": [
+        "builtin/wait {\"delay\":\"5000\"}",
+        "say #!builtin_text-4G_YsW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-65b7f5",
+      "type": "skill-call",
+      "skill": "SendEmail",
+      "name": "SendEmail-LiveAgent",
+      "flow": "skills/SendEmail-65b7f5.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.success",
+          "node": "Live-agent-wait"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.success",
+          "node": "no-agent-found"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "ca73cb1fff",
+      "name": "no-agent-found",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-functions"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-jpilvc"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "01e7a43537",
+      "name": "live-entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "SendEmail-LiveAgent"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-cAP84L"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"SubjectIssue\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    }
+  ]
+}

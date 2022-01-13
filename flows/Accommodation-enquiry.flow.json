@@ -1,0 +1,472 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "e3a4546995",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-accommodation-city"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "882cd75bdb",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-accommodation-city",
+      "flow": "skills/choice-6e2250.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Mombasa]",
+          "condition": "temp['skill-choice-ret-d03v0mqqs2'] == \"Mombasa\"",
+          "node": "MSA_Planned_days_to_stay"
+        },
+        {
+          "caption": "User picked [Nairobi]",
+          "condition": "temp['skill-choice-ret-d03v0mqqs2'] == \"Nairobi\"",
+          "node": "NRB_Planned_days_to_stay"
+        },
+        {
+          "caption": "User picked [Kisumu]",
+          "condition": "temp['skill-choice-ret-d03v0mqqs2'] == \"Kisumu\"",
+          "node": "KIS_Planned_days_to_stay"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "fac6633ed0",
+      "name": "Accommodation-Mombasa",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-Enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-3inhoL"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "6a7bf5905c",
+      "name": "Accomodation-Nairobi",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-Enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-T28Vml"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f9f7b4a915",
+      "name": "Accommodation-Kisumu",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-Enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-z17yVC"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-a65a73",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "MSA_Customer_budget",
+      "flow": "skills/choice-a65a73.flow.json",
+      "next": [
+        {
+          "caption": "User picked [below 2...]",
+          "condition": "temp['skill-choice-ret-tml5zy14d8'] == \"below 20,000\"",
+          "node": "MSA_below_20"
+        },
+        {
+          "caption": "User picked [20,000-...]",
+          "condition": "temp['skill-choice-ret-tml5zy14d8'] == \"20,000-  50,000\"",
+          "node": "MSA_20-50"
+        },
+        {
+          "caption": "User picked [50,000 ...]",
+          "condition": "temp['skill-choice-ret-tml5zy14d8'] == \"50,000 and above\"",
+          "node": "MSA_over_50"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "c2a868d39d",
+      "name": "MSA_Planned_days_to_stay",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_Customer_budget"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-xUoFyL"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"planneddays\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "7ad46f94b0",
+      "name": "MSA_20-50",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed_accomodation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-dztdJu",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "7a36b0d434",
+      "name": "MSA_over_50",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed_accomodation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-yeokDn",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "7c3dbe40ce",
+      "name": "MSA_below_20",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed_accomodation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-m1ukNu",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "baf069f57e",
+      "name": "NRB_Planned_days_to_stay",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_Customer_budget"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-xUoFyL"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"planneddays\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "bff6a7e4df",
+      "name": "KIS_Planned_days_to_stay",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_Customer_budget"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-xUoFyL"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"planneddays\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "0a8ec3deee",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "NRB_Customer_budget",
+      "flow": "skills/choice-a65a73.flow.json",
+      "next": [
+        {
+          "caption": "User picked [below 2...]",
+          "condition": "temp['skill-choice-ret-tml5zy14d8'] == \"below 20,000\"",
+          "node": "NRB_below_20"
+        },
+        {
+          "caption": "User picked [20,000-...]",
+          "condition": "temp['skill-choice-ret-tml5zy14d8'] == \"20,000-  50,000\"",
+          "node": "NRB_20-50"
+        },
+        {
+          "caption": "User picked [50,000 ...]",
+          "condition": "temp['skill-choice-ret-tml5zy14d8'] == \"50,000 and above\"",
+          "node": "NRB_over_50"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "547f10b6ae",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "KIS_Customer_budget",
+      "flow": "skills/choice-a65a73.flow.json",
+      "next": [
+        {
+          "caption": "User picked [below 2...]",
+          "condition": "temp['skill-choice-ret-tml5zy14d8'] == \"below 20,000\"",
+          "node": "KIS_below_20"
+        },
+        {
+          "caption": "User picked [20,000-...]",
+          "condition": "temp['skill-choice-ret-tml5zy14d8'] == \"20,000-  50,000\"",
+          "node": "KIS_20-50"
+        },
+        {
+          "caption": "User picked [50,000 ...]",
+          "condition": "temp['skill-choice-ret-tml5zy14d8'] == \"50,000 and above\"",
+          "node": "KIS_over_50"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "f332e88a2f",
+      "name": "NRB_below_20",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed_accomodation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-6dpQsb",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "6c0daa4a40",
+      "name": "NRB_20-50",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed_accomodation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-DNAxbu",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "919a3ac9c4",
+      "name": "NRB_over_50",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed_accomodation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-4-jHfl",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "48ee7cbfd0",
+      "name": "KIS_below_20",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed_accomodation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-rbq27v",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f176f19547",
+      "name": "KIS_20-50",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed_accomodation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-XSnBr0",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "54ad989dbe",
+      "name": "KIS_over_50",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed_accomodation"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-nPpwQd",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4f8a6cf9dc",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "NRB-Ask_to_proceed_accomodation",
+      "flow": "skills/choice-f080e0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [BACK]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"BACK\"",
+          "node": "NRB_Customer_budget"
+        },
+        {
+          "caption": "User picked [NEXT]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"NEXT\"",
+          "node": "Accomodation-accept-to-make-enquiry.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "9c85aa5199",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "MSA-Ask_to_proceed_accomodation",
+      "flow": "skills/choice-f080e0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [BACK]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"BACK\"",
+          "node": "MSA_Customer_budget"
+        },
+        {
+          "caption": "User picked [NEXT]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"NEXT\"",
+          "node": "Accomodation-accept-to-make-enquiry.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "db5e776b7d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "KIS-Ask_to_proceed_accomodation",
+      "flow": "skills/choice-f080e0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [BACK]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"BACK\"",
+          "node": "KIS_Customer_budget"
+        },
+        {
+          "caption": "User picked [NEXT]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"NEXT\"",
+          "node": "Accomodation-accept-to-make-enquiry.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

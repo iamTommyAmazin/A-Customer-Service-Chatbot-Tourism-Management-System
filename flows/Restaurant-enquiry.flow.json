@@ -1,0 +1,1384 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "57ed1ab74e",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-restaurant-city"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "c79cb395fa",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-restaurant-city",
+      "flow": "skills/choice-6e2250.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Mombasa]",
+          "condition": "temp['skill-choice-ret-d03v0mqqs2'] == \"Mombasa\"",
+          "node": "city_choice_save"
+        },
+        {
+          "caption": "User picked [Nairobi]",
+          "condition": "temp['skill-choice-ret-d03v0mqqs2'] == \"Nairobi\"",
+          "node": "city_choice_save-copy"
+        },
+        {
+          "caption": "User picked [Kisumu]",
+          "condition": "temp['skill-choice-ret-d03v0mqqs2'] == \"Kisumu\"",
+          "node": "city_choice_save-copy-1"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "e5beea51ce",
+      "name": "Mombasa-Restaurant",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-Enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-2YByH-"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4592b4d38a",
+      "name": "Nairobi-Restaurant",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-Enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-cCh81r"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "3fc1323a6c",
+      "name": "Kisumu-Restaurant",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-Enquiry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-fR0ne2"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-9c2f1a",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "MSA_choice-food_category",
+      "flow": "skills/choice-9c2f1a.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Swahii ...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"Swahii Dishes\"",
+          "node": "Food_category_Swahili"
+        },
+        {
+          "caption": "User picked [African...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"African Dishes\"",
+          "node": "Food_category_African"
+        },
+        {
+          "caption": "User picked [Italian...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"Italian Dishes\"",
+          "node": "Food_category_Italian"
+        },
+        {
+          "caption": "User picked [Chinese...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"Chinese Dishe\"",
+          "node": "Food_category_Chinese"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "61b519d5a0",
+      "name": "Food_category_Swahili",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e365fe5571",
+      "name": "Food_category_African",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "52c10c7e17",
+      "name": "Food_category_Italian",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-1"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "23808c6a77",
+      "name": "Food_category_Chinese",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-2"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-69bf45",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "c09679ec38",
+      "name": "Food_budget_below_20",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_swahili_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4d11b20a1f",
+      "name": "Food_budget_over_20",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_swahili_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "89843b2e46",
+      "name": "MSA_swahili_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-USNmFw",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "7198fad69c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "df82667290",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-1",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-1"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-1"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "6dadc6afb3",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-2",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-2"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-2"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "f2e6f99c9b",
+      "name": "Food_budget_below_20-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_African_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "cc86e6e4f7",
+      "name": "Food_budget_below_20-copy-1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_Italian_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "eb743b2551",
+      "name": "Food_budget_below_20-copy-2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_Chinese_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "22145ed6e7",
+      "name": "Food_budget_over_20-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_African_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "24c6873961",
+      "name": "Food_budget_over_20-copy-1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_Italian_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f50048b61d",
+      "name": "Food_budget_over_20-copy-2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_Chinese_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "41124edf53",
+      "name": "MSA_African_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-HkMS2K",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a7188a4999",
+      "name": "MSA_Italian_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-g79RX8",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "79a24a3038",
+      "name": "MSA_Chinese_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-NbwxJz",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "c4f8d11f6d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "NRB_choice-food_category",
+      "flow": "skills/choice-9c2f1a.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Swahii ...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"Swahii Dishes\"",
+          "node": "Food_category_Swahili-copy"
+        },
+        {
+          "caption": "User picked [African...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"African Dishes\"",
+          "node": "Food_category_African-copy"
+        },
+        {
+          "caption": "User picked [Italian...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"Italian Dishes\"",
+          "node": "Food_category_Italian-copy"
+        },
+        {
+          "caption": "User picked [Chinese...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"Chinese Dishe\"",
+          "node": "Food_category_Chinese-copy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "80fac3cb89",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "KIS_choice-food_category",
+      "flow": "skills/choice-9c2f1a.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Swahii ...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"Swahii Dishes\"",
+          "node": "Food_category_Swahili-copy-1"
+        },
+        {
+          "caption": "User picked [African...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"African Dishes\"",
+          "node": "Food_category_African-copy-copy"
+        },
+        {
+          "caption": "User picked [Italian...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"Italian Dishes\"",
+          "node": "Food_category_Italian-copy-copy"
+        },
+        {
+          "caption": "User picked [Chinese...]",
+          "condition": "temp['skill-choice-ret-zs3qnsrf7n'] == \"Chinese Dishe\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "Food_category_Chinese-copy-copy"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "9f85ca7d79",
+      "name": "Food_category_Swahili-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-3"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "6b36437a6d",
+      "name": "Food_category_African-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-4"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "9571a96d30",
+      "name": "Food_category_Italian-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-5"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "500153c748",
+      "name": "Food_category_Chinese-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-6"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "c383b3d29c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-3",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-3"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-3"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "5a458fdf68",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-4",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-4"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-4"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "0af426793f",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-5",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-5"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-5"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "3b442c3645",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-6",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-6"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-6"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "0caf7b3017",
+      "name": "Food_budget_below_20-copy-3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_Swahili_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "b71eb4fdd3",
+      "name": "Food_budget_below_20-copy-4",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_African_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "61233e4ecc",
+      "name": "Food_budget_below_20-copy-5",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_Italian_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "3dc584d70a",
+      "name": "Food_budget_below_20-copy-6",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_Chinese_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "476db4104a",
+      "name": "Food_budget_over_20-copy-3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_Swahili_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "70b50da54d",
+      "name": "Food_budget_over_20-copy-4",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_African_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "7729eee3c2",
+      "name": "Food_budget_over_20-copy-5",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_Italian_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "1977f1a580",
+      "name": "Food_budget_over_20-copy-6",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_Chinese_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "123de6c381",
+      "name": "NRB_Chinese_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-KvZVhY",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "39d701c5ef",
+      "name": "NRB_Italian_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-Vg_Fzk",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "38398a572b",
+      "name": "NRB_African_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-pQq1S3",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8f92564d01",
+      "name": "NRB_Swahili_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-erWGTI",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "2bc9658bda",
+      "name": "Food_category_Swahili-copy-1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-3-copy"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "139bc3ee29",
+      "name": "Food_category_African-copy-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-3-copy-1"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a059041101",
+      "name": "Food_category_Italian-copy-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-3-copy-2"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e1b0441347",
+      "name": "Food_category_Chinese-copy-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-food_budget-copy-3-copy-3"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodcategory\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "48a2403c1d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-3-copy",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-6-copy"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-6-copy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "bb183e8bcb",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-3-copy-1",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-6-copy-1"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-6-copy-1"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "8887969a27",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-3-copy-2",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-6-copy-2"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-6-copy-2"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "867ca221a7",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-food_budget-copy-3-copy-3",
+      "flow": "skills/choice-69bf45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Less th...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Less than 20,000\"",
+          "node": "Food_budget_below_20-copy-6-copy-3"
+        },
+        {
+          "caption": "User picked [Greater...]",
+          "condition": "temp['skill-choice-ret-iyv8icxumz'] == \"Greater than 20,000\"",
+          "node": "Food_budget_over_20-copy-6-copy-3"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "9f614c04d5",
+      "name": "Food_budget_below_20-copy-6-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_Swahili_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "71abd08fa9",
+      "name": "Food_budget_below_20-copy-6-copy-1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_African_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "3fc5aa1351",
+      "name": "Food_budget_below_20-copy-6-copy-2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_Italian_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "40d55f5a6c",
+      "name": "Food_budget_below_20-copy-6-copy-3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_Chinese_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8585f2b2f8",
+      "name": "Food_budget_over_20-copy-6-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_Swahili_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "2c90be16f3",
+      "name": "Food_budget_over_20-copy-6-copy-1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_African_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "08beb40083",
+      "name": "Food_budget_over_20-copy-6-copy-2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_Italian_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "91aa4b2739",
+      "name": "Food_budget_over_20-copy-6-copy-3",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_Chinese_food"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"Foodbudget\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "276bf57679",
+      "name": "KIS_Chinese_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-DvBLhb",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "2d747d7fbb",
+      "name": "KIS_Italian_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-KXoN88",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "38ff358736",
+      "name": "KIS_African_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-h6jyev",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8522cc3e9c",
+      "name": "KIS_Swahili_food",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS-Ask_to_proceed_food"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bhUF5N",
+        "say #!builtin_card-t82t1a",
+        "builtin/wait {\"delay\":\"5000\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "81bf902762",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "MSA-Ask_to_proceed_food",
+      "flow": "skills/choice-f080e0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [BACK]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"BACK\"",
+          "node": "MSA_choice-food_category"
+        },
+        {
+          "caption": "User picked [NEXT]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"NEXT\"",
+          "node": "Accept-to-make-enquiry.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "f6e234bb42",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "NRB-Ask_to_proceed_food",
+      "flow": "skills/choice-f080e0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [BACK]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"BACK\"",
+          "node": "NRB_choice-food_category"
+        },
+        {
+          "caption": "User picked [NEXT]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"NEXT\"",
+          "node": "Accept-to-make-enquiry.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "b7f0519d8c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "KIS-Ask_to_proceed_food",
+      "flow": "skills/choice-f080e0.flow.json",
+      "next": [
+        {
+          "caption": "User picked [BACK]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"BACK\"",
+          "node": "KIS_choice-food_category"
+        },
+        {
+          "caption": "User picked [NEXT]",
+          "condition": "temp['skill-choice-ret-2johs34haz'] == \"NEXT\"",
+          "node": "Accept-to-make-enquiry.flow.json"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "b0f8d928c2",
+      "name": "city_choice_save",
+      "next": [
+        {
+          "condition": "true",
+          "node": "MSA_choice-food_category"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"city\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0aadea7d18",
+      "name": "city_choice_save-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "NRB_choice-food_category"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"city\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a68fa284c0",
+      "name": "city_choice_save-copy-1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "KIS_choice-food_category"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"city\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

@@ -1,0 +1,1023 @@
+{
+  "nodes": [
+    {
+      "id": "cad600fdd4",
+      "position": {
+        "x": -790,
+        "y": -180
+      }
+    },
+    {
+      "id": "7db2f234a7",
+      "position": {
+        "x": -730,
+        "y": 40
+      }
+    },
+    {
+      "id": "0b5d12d270",
+      "position": {
+        "x": 1570,
+        "y": -300
+      }
+    },
+    {
+      "id": "9e1c0501dc",
+      "position": {
+        "x": 225,
+        "y": 535
+      }
+    },
+    {
+      "id": "f83e0846af",
+      "position": {
+        "x": 150,
+        "y": 715
+      }
+    },
+    {
+      "id": "skill-4b39a2",
+      "position": {
+        "x": -15,
+        "y": -140
+      }
+    },
+    {
+      "id": "skill-19a649",
+      "position": {
+        "x": 410,
+        "y": -275
+      }
+    },
+    {
+      "id": "skill-3d479c",
+      "position": {
+        "x": -35,
+        "y": 65
+      }
+    },
+    {
+      "id": "skill-261ca1",
+      "position": {
+        "x": -245,
+        "y": 405
+      }
+    },
+    {
+      "id": "6478ab1cc5",
+      "position": {
+        "x": 245,
+        "y": 155
+      }
+    },
+    {
+      "id": "366b73f2df",
+      "position": {
+        "x": -390,
+        "y": 805
+      }
+    },
+    {
+      "id": "11bddb626f",
+      "position": {
+        "x": 740,
+        "y": -430
+      }
+    },
+    {
+      "id": "559505c0d2",
+      "position": {
+        "x": 1000,
+        "y": -305
+      }
+    },
+    {
+      "id": "f523b52d8a",
+      "position": {
+        "x": 785,
+        "y": -220
+      }
+    },
+    {
+      "id": "15bee840c1",
+      "position": {
+        "x": 810,
+        "y": -35
+      }
+    },
+    {
+      "id": "b5b4a646fd",
+      "position": {
+        "x": 445,
+        "y": -495
+      }
+    },
+    {
+      "id": "a5811e9ba3",
+      "position": {
+        "x": 1105,
+        "y": 0
+      }
+    },
+    {
+      "id": "bd1ea61c64",
+      "position": {
+        "x": 830,
+        "y": 135
+      }
+    },
+    {
+      "id": "e30bccb4f0",
+      "position": {
+        "x": 860,
+        "y": 340
+      }
+    },
+    {
+      "id": "a759abf87e",
+      "position": {
+        "x": 575,
+        "y": 155
+      }
+    },
+    {
+      "id": "ecc6b703c4",
+      "position": {
+        "x": 865,
+        "y": 515
+      }
+    },
+    {
+      "id": "9bc9a7a84b",
+      "position": {
+        "x": 645,
+        "y": 385
+      }
+    },
+    {
+      "id": "7ca8814174",
+      "position": {
+        "x": 535,
+        "y": 685
+      }
+    },
+    {
+      "id": "0f9335003c",
+      "position": {
+        "x": 465,
+        "y": 475
+      }
+    },
+    {
+      "id": "53d1b7846b",
+      "position": {
+        "x": 75,
+        "y": 895
+      }
+    },
+    {
+      "id": "b4084eaf89",
+      "position": {
+        "x": 420,
+        "y": 955
+      }
+    },
+    {
+      "id": "90ac7a6b62",
+      "position": {
+        "x": 280,
+        "y": 1105
+      }
+    },
+    {
+      "id": "e60e651962",
+      "position": {
+        "x": -60,
+        "y": 1070
+      }
+    },
+    {
+      "id": "6f3e1a319d",
+      "position": {
+        "x": 0,
+        "y": 555
+      }
+    },
+    {
+      "id": "skill-f080e0",
+      "position": {
+        "x": 1135,
+        "y": 210
+      }
+    },
+    {
+      "id": "670bf5aef2",
+      "position": {
+        "x": 855,
+        "y": 750
+      }
+    },
+    {
+      "id": "4afb9e503a",
+      "position": {
+        "x": 1285,
+        "y": 530
+      }
+    },
+    {
+      "id": "3346c09475",
+      "position": {
+        "x": -270,
+        "y": 1085
+      }
+    },
+    {
+      "id": "0bedfddf48",
+      "position": {
+        "x": -400,
+        "y": -105
+      }
+    },
+    {
+      "id": "b73d524338",
+      "position": {
+        "x": -400,
+        "y": 100
+      }
+    },
+    {
+      "id": "e0e2fa7eef",
+      "position": {
+        "x": -505,
+        "y": 315
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "0bedfddf48",
+      "sourcePort": "out0",
+      "target": "skill-4b39a2",
+      "points": [
+        {
+          "x": -200,
+          "y": -31
+        },
+        {
+          "x": -15,
+          "y": -123
+        }
+      ]
+    },
+    {
+      "source": "0f9335003c",
+      "sourcePort": "out0",
+      "target": "4afb9e503a",
+      "points": [
+        {
+          "x": 665,
+          "y": 627
+        },
+        {
+          "x": 1285,
+          "y": 547
+        }
+      ]
+    },
+    {
+      "source": "11bddb626f",
+      "sourcePort": "out0",
+      "target": "skill-f080e0",
+      "points": [
+        {
+          "x": 940,
+          "y": -278
+        },
+        {
+          "x": 1135,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "source": "15bee840c1",
+      "sourcePort": "out0",
+      "target": "skill-f080e0",
+      "points": [
+        {
+          "x": 1010,
+          "y": 117
+        },
+        {
+          "x": 1135,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "source": "3346c09475",
+      "sourcePort": "out0",
+      "target": "670bf5aef2",
+      "points": [
+        {
+          "x": -70,
+          "y": 1262
+        },
+        {
+          "x": 855,
+          "y": 767
+        }
+      ]
+    },
+    {
+      "source": "366b73f2df",
+      "sourcePort": "out4",
+      "target": "3346c09475",
+      "points": [
+        {
+          "x": -190,
+          "y": 982
+        },
+        {
+          "x": -270,
+          "y": 1102
+        }
+      ]
+    },
+    {
+      "source": "366b73f2df",
+      "sourcePort": "out1",
+      "target": "53d1b7846b",
+      "points": [
+        {
+          "x": -190,
+          "y": 891
+        },
+        {
+          "x": 75,
+          "y": 912
+        }
+      ]
+    },
+    {
+      "source": "366b73f2df",
+      "sourcePort": "out2",
+      "target": "6f3e1a319d",
+      "points": [
+        {
+          "x": -190,
+          "y": 922
+        },
+        {
+          "x": 0,
+          "y": 572
+        }
+      ]
+    },
+    {
+      "source": "366b73f2df",
+      "sourcePort": "out3",
+      "target": "90ac7a6b62",
+      "points": [
+        {
+          "x": -190,
+          "y": 952
+        },
+        {
+          "x": 280,
+          "y": 1122
+        }
+      ]
+    },
+    {
+      "source": "366b73f2df",
+      "sourcePort": "out5",
+      "target": "b4084eaf89",
+      "points": [
+        {
+          "x": -190,
+          "y": 1013
+        },
+        {
+          "x": 420,
+          "y": 972
+        }
+      ]
+    },
+    {
+      "source": "366b73f2df",
+      "sourcePort": "out0",
+      "target": "e60e651962",
+      "points": [
+        {
+          "x": -190,
+          "y": 861
+        },
+        {
+          "x": -60,
+          "y": 1087
+        }
+      ]
+    },
+    {
+      "source": "4afb9e503a",
+      "sourcePort": "out0",
+      "target": "6478ab1cc5",
+      "points": [
+        {
+          "x": 1485,
+          "y": 574
+        },
+        {
+          "x": 245,
+          "y": 178
+        }
+      ]
+    },
+    {
+      "source": "53d1b7846b",
+      "sourcePort": "out0",
+      "target": "670bf5aef2",
+      "points": [
+        {
+          "x": 275,
+          "y": 1047
+        },
+        {
+          "x": 855,
+          "y": 767
+        }
+      ]
+    },
+    {
+      "source": "559505c0d2",
+      "sourcePort": "out0",
+      "target": "skill-f080e0",
+      "points": [
+        {
+          "x": 1200,
+          "y": -153
+        },
+        {
+          "x": 1135,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "source": "6478ab1cc5",
+      "sourcePort": "out5",
+      "target": "0f9335003c",
+      "points": [
+        {
+          "x": 445,
+          "y": 363
+        },
+        {
+          "x": 465,
+          "y": 492
+        }
+      ]
+    },
+    {
+      "source": "6478ab1cc5",
+      "sourcePort": "out4",
+      "target": "7ca8814174",
+      "points": [
+        {
+          "x": 445,
+          "y": 332
+        },
+        {
+          "x": 535,
+          "y": 702
+        }
+      ]
+    },
+    {
+      "source": "6478ab1cc5",
+      "sourcePort": "out3",
+      "target": "9bc9a7a84b",
+      "points": [
+        {
+          "x": 445,
+          "y": 302
+        },
+        {
+          "x": 645,
+          "y": 402
+        }
+      ]
+    },
+    {
+      "source": "6478ab1cc5",
+      "sourcePort": "out1",
+      "target": "a759abf87e",
+      "points": [
+        {
+          "x": 445,
+          "y": 241
+        },
+        {
+          "x": 575,
+          "y": 172
+        }
+      ]
+    },
+    {
+      "source": "6478ab1cc5",
+      "sourcePort": "out0",
+      "target": "e30bccb4f0",
+      "points": [
+        {
+          "x": 445,
+          "y": 211
+        },
+        {
+          "x": 860,
+          "y": 357
+        }
+      ]
+    },
+    {
+      "source": "6478ab1cc5",
+      "sourcePort": "out2",
+      "target": "ecc6b703c4",
+      "points": [
+        {
+          "x": 445,
+          "y": 272
+        },
+        {
+          "x": 865,
+          "y": 532
+        }
+      ]
+    },
+    {
+      "source": "670bf5aef2",
+      "sourcePort": "out0",
+      "target": "366b73f2df",
+      "points": [
+        {
+          "x": 1055,
+          "y": 794
+        },
+        {
+          "x": -390,
+          "y": 828
+        }
+      ]
+    },
+    {
+      "source": "6f3e1a319d",
+      "sourcePort": "out0",
+      "target": "670bf5aef2",
+      "points": [
+        {
+          "x": 200,
+          "y": 707
+        },
+        {
+          "x": 855,
+          "y": 767
+        }
+      ]
+    },
+    {
+      "source": "7ca8814174",
+      "sourcePort": "out0",
+      "target": "4afb9e503a",
+      "points": [
+        {
+          "x": 735,
+          "y": 837
+        },
+        {
+          "x": 1285,
+          "y": 547
+        }
+      ]
+    },
+    {
+      "source": "7db2f234a7",
+      "sourcePort": "out0",
+      "target": "0bedfddf48",
+      "points": [
+        {
+          "x": -530,
+          "y": 84
+        },
+        {
+          "x": -400,
+          "y": -88
+        }
+      ]
+    },
+    {
+      "source": "7db2f234a7",
+      "sourcePort": "out1",
+      "target": "b73d524338",
+      "points": [
+        {
+          "x": -530,
+          "y": 114
+        },
+        {
+          "x": -400,
+          "y": 117
+        }
+      ]
+    },
+    {
+      "source": "7db2f234a7",
+      "sourcePort": "out2",
+      "target": "e0e2fa7eef",
+      "points": [
+        {
+          "x": -530,
+          "y": 145
+        },
+        {
+          "x": -505,
+          "y": 332
+        }
+      ]
+    },
+    {
+      "source": "90ac7a6b62",
+      "sourcePort": "out0",
+      "target": "670bf5aef2",
+      "points": [
+        {
+          "x": 480,
+          "y": 1270
+        },
+        {
+          "x": 855,
+          "y": 767
+        }
+      ]
+    },
+    {
+      "source": "9bc9a7a84b",
+      "sourcePort": "out0",
+      "target": "4afb9e503a",
+      "points": [
+        {
+          "x": 845,
+          "y": 537
+        },
+        {
+          "x": 1285,
+          "y": 547
+        }
+      ]
+    },
+    {
+      "source": "a5811e9ba3",
+      "sourcePort": "out0",
+      "target": "skill-f080e0",
+      "points": [
+        {
+          "x": 1305,
+          "y": 152
+        },
+        {
+          "x": 1135,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "source": "a759abf87e",
+      "sourcePort": "out0",
+      "target": "4afb9e503a",
+      "points": [
+        {
+          "x": 775,
+          "y": 320
+        },
+        {
+          "x": 1285,
+          "y": 547
+        }
+      ]
+    },
+    {
+      "source": "b4084eaf89",
+      "sourcePort": "out0",
+      "target": "670bf5aef2",
+      "points": [
+        {
+          "x": 620,
+          "y": 1107
+        },
+        {
+          "x": 855,
+          "y": 767
+        }
+      ]
+    },
+    {
+      "source": "b5b4a646fd",
+      "sourcePort": "out0",
+      "target": "skill-f080e0",
+      "points": [
+        {
+          "x": 645,
+          "y": -318
+        },
+        {
+          "x": 1135,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "source": "b73d524338",
+      "sourcePort": "out0",
+      "target": "skill-3d479c",
+      "points": [
+        {
+          "x": -200,
+          "y": 174
+        },
+        {
+          "x": -35,
+          "y": 82
+        }
+      ]
+    },
+    {
+      "source": "bd1ea61c64",
+      "sourcePort": "out0",
+      "target": "skill-f080e0",
+      "points": [
+        {
+          "x": 1030,
+          "y": 287
+        },
+        {
+          "x": 1135,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "source": "cad600fdd4",
+      "sourcePort": "out0",
+      "target": "7db2f234a7",
+      "points": [
+        {
+          "x": -590,
+          "y": -136
+        },
+        {
+          "x": -730,
+          "y": 57
+        }
+      ]
+    },
+    {
+      "source": "e0e2fa7eef",
+      "sourcePort": "out0",
+      "target": "skill-261ca1",
+      "points": [
+        {
+          "x": -305,
+          "y": 389
+        },
+        {
+          "x": -245,
+          "y": 422
+        }
+      ]
+    },
+    {
+      "source": "e30bccb4f0",
+      "sourcePort": "out0",
+      "target": "4afb9e503a",
+      "points": [
+        {
+          "x": 1060,
+          "y": 492
+        },
+        {
+          "x": 1285,
+          "y": 547
+        }
+      ]
+    },
+    {
+      "source": "e60e651962",
+      "sourcePort": "out0",
+      "target": "670bf5aef2",
+      "points": [
+        {
+          "x": 140,
+          "y": 1222
+        },
+        {
+          "x": 855,
+          "y": 767
+        }
+      ]
+    },
+    {
+      "source": "ecc6b703c4",
+      "sourcePort": "out0",
+      "target": "4afb9e503a",
+      "points": [
+        {
+          "x": 1065,
+          "y": 667
+        },
+        {
+          "x": 1285,
+          "y": 547
+        }
+      ]
+    },
+    {
+      "source": "f523b52d8a",
+      "sourcePort": "out0",
+      "target": "skill-f080e0",
+      "points": [
+        {
+          "x": 985,
+          "y": -68
+        },
+        {
+          "x": 1135,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "source": "skill-19a649",
+      "sourcePort": "out2",
+      "target": "11bddb626f",
+      "points": [
+        {
+          "x": 610,
+          "y": -158
+        },
+        {
+          "x": 740,
+          "y": -413
+        }
+      ]
+    },
+    {
+      "source": "skill-19a649",
+      "sourcePort": "out3",
+      "target": "559505c0d2",
+      "points": [
+        {
+          "x": 610,
+          "y": -128
+        },
+        {
+          "x": 1000,
+          "y": -288
+        }
+      ]
+    },
+    {
+      "source": "skill-19a649",
+      "sourcePort": "out1",
+      "target": "a5811e9ba3",
+      "points": [
+        {
+          "x": 610,
+          "y": -189
+        },
+        {
+          "x": 1105,
+          "y": 17
+        }
+      ]
+    },
+    {
+      "source": "skill-19a649",
+      "sourcePort": "out0",
+      "target": "b5b4a646fd",
+      "points": [
+        {
+          "x": 610,
+          "y": -219
+        },
+        {
+          "x": 445,
+          "y": -478
+        }
+      ]
+    },
+    {
+      "source": "skill-19a649",
+      "sourcePort": "out4",
+      "target": "f523b52d8a",
+      "points": [
+        {
+          "x": 610,
+          "y": -98
+        },
+        {
+          "x": 785,
+          "y": -203
+        }
+      ]
+    },
+    {
+      "source": "skill-261ca1",
+      "sourcePort": "out0",
+      "target": "366b73f2df",
+      "points": [
+        {
+          "x": -45,
+          "y": 449
+        },
+        {
+          "x": -390,
+          "y": 828
+        }
+      ]
+    },
+    {
+      "source": "skill-3d479c",
+      "sourcePort": "out0",
+      "target": "6478ab1cc5",
+      "points": [
+        {
+          "x": 165,
+          "y": 109
+        },
+        {
+          "x": 245,
+          "y": 178
+        }
+      ]
+    },
+    {
+      "source": "skill-3d479c",
+      "sourcePort": "out1",
+      "target": "6478ab1cc5",
+      "points": [
+        {
+          "x": 165,
+          "y": 139
+        },
+        {
+          "x": 245,
+          "y": 178
+        }
+      ]
+    },
+    {
+      "source": "skill-4b39a2",
+      "sourcePort": "out0",
+      "target": "skill-19a649",
+      "points": [
+        {
+          "x": 185,
+          "y": -96
+        },
+        {
+          "x": 410,
+          "y": -252
+        }
+      ]
+    },
+    {
+      "source": "skill-4b39a2",
+      "sourcePort": "out1",
+      "target": "skill-19a649",
+      "points": [
+        {
+          "x": 185,
+          "y": -66
+        },
+        {
+          "x": 410,
+          "y": -252
+        }
+      ]
+    },
+    {
+      "source": "skill-f080e0",
+      "sourcePort": "out0",
+      "target": "skill-19a649",
+      "points": [
+        {
+          "x": 1335,
+          "y": 280
+        },
+        {
+          "x": 410,
+          "y": -252
+        }
+      ]
+    }
+  ]
+}

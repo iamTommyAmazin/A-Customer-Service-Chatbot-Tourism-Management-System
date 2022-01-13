@@ -1,0 +1,118 @@
+{
+  "version": "0.0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "9ae9b20a4f",
+      "name": "entry",
+      "onEnter": [],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "User_age"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "89edb44e47",
+      "name": "User_age",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-gender"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-HS9Php"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"age\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "2380db8b49",
+      "name": "user_travelPeriod",
+      "next": [
+        {
+          "condition": "true",
+          "node": "user_favourite_activity"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-O7W5-c"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"travelperiod\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "a336a50b6f",
+      "name": "user_favourite_activity",
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json#choice-functions"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-s7SAmJ"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"favouriteActivity\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "8a692e11e9",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-gender",
+      "flow": "skills/choice-5028a5.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Male]",
+          "condition": "temp['skill-choice-ret-f5stzqmzwg'] == \"Male\"",
+          "node": "User_gender"
+        },
+        {
+          "caption": "User picked [Female]",
+          "condition": "temp['skill-choice-ret-f5stzqmzwg'] == \"Female\"",
+          "node": "User_gender"
+        },
+        {
+          "caption": "User picked [Other]",
+          "condition": "temp['skill-choice-ret-f5stzqmzwg'] == \"Other\"",
+          "node": "User_gender"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "8a14ac61b3",
+      "name": "User_gender",
+      "next": [
+        {
+          "condition": "true",
+          "node": "user_travelPeriod"
+        }
+      ],
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"gender\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}
