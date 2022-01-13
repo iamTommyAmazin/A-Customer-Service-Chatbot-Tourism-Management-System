@@ -3,9 +3,9 @@
   "disabled": false,
   "private": false,
   "details": {
-    "website": "http://www.twitter.com/kompanystatue.com",
-    "phoneNumber": "0790532395",
-    "emailAddress": "tommysolkid@gmail.com",
+    "website": "https://twitter.com/TomCityzen",
+    "phoneNumber": "",
+    "emailAddress": "iamtommy254@gmail.com",
     "termsConditions": "",
     "privacyPolicy": "",
     "avatarUrl": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/e58dhwwr67l2fbbgzu34-Chatbot%20avatar.png",
@@ -36,7 +36,7 @@
     ]
   },
   "dialog": {
-    "timeoutInterval": "30m"
+    "timeoutInterval": "5m"
   },
   "logs": {
     "expiration": "1 week"
@@ -60,7 +60,7 @@
         "enabled": true,
         "accessToken": "EAAGarIZBJSWIBAOPWgMQCHGhDMZChpIDEknblh76op3dI73YvZBKNe5yTrVW2L6dNtBeUaThaJE89e1nNt9HdmyZACP2VdWXjuBaHiiiRm6qNPZBxryix5NvU02TYi6WR702ourqZB21ZCVbyr3CGo9ey0rlpNo6PXRRn13yJ6teXxBDS32p4cc4HctZCNl7GM0ZD",
         "appSecret": "83998e46312d9cebab8dc5e02b682ff8",
-        "verifyToken": "meremere8638"
+        "verifyToken": "Killswitch"
       }
     },
     "id": "bf5c440e-e00c-4c9e-a448-ef8b415bee71",
