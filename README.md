@@ -3,3 +3,6 @@
  
  
  The chatbot was built using Botpress Framwork and deployed on Facebook Messenger
+ 
+ 
+ ![1](https://user-images.githubusercontent.com/65623921/149364228-a9c90529-fb62-4577-a83a-1c22611172d8.PNG)
